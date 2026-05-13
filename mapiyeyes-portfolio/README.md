@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Silindokuhle Mapiyeye Portfolio
 
-## Getting Started
+Personal portfolio for Silindokuhle Mapiyeye, a Full-Stack SaaS Engineer focused on Laravel, Next.js, REST APIs, integrations, RBAC, payments, AI workflows, queues, and cloud deployments.
 
-First, run the development server:
+## Purpose
+
+This portfolio is the public proof hub for my work:
+
+- CV and professional positioning.
+- Selected projects.
+- Case studies.
+- GitHub and LinkedIn links.
+- Contact paths for contract, freelance, and engineering opportunities.
+
+## Stack
+
+- Next.js.
+- TypeScript.
+- Tailwind CSS.
+- Coss UI.
+- Lucide icons.
+- Framer Motion.
+- zod.
+- Vercel Analytics or Plausible.
+- Vitest.
+- Testing Library.
+- Playwright.
+
+## Sections
+
+- Home.
+- Projects.
+- Case studies.
+- Skills and stack.
+- Experience snapshot.
+- CV download.
+- Contact.
+
+## Featured Projects
+
+- Document Search Portal.
+- Risk Management / RBAC Platform.
+- Prosuite Chatbot Hackathon.
+- Background Job Runner, if strong enough after review.
+
+## Local Development
+
+Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Start the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open `http://localhost:3000`.
 
-## Learn More
+## Positioning
 
-To learn more about Next.js, take a look at the following resources:
+The portfolio is being built around practical proof:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Laravel and Next.js SaaS systems.
+- API and integration work.
+- Auth, RBAC, payments, and AI workflows.
+- Queues, caching, deployment, and production support.
+- Case studies that explain problem, role, architecture, decisions, and outcome.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Status
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+In progress. The portfolio is being rebuilt around proof, case studies, and a stronger global-facing developer profile.
