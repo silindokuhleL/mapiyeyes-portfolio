@@ -7,9 +7,9 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-white px-6 py-3 text-sm text-slate-950 hover:bg-cyan-100",
+        primary: "bg-cyan-300 px-6 py-3 text-sm text-slate-950 hover:bg-cyan-200",
         secondary:
-          "border border-white/15 bg-white/[0.03] px-6 py-3 text-sm text-white hover:border-cyan-300/40 hover:bg-white/5",
+          "border border-white/15 bg-white/3 px-6 py-3 text-sm text-white hover:border-cyan-300/40 hover:bg-white/5",
         ghost: "px-0 py-0 text-sm text-cyan-200 hover:text-white",
       },
       size: {

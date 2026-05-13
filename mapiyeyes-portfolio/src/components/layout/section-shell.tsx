@@ -22,15 +22,15 @@ export function SectionShell({
   return (
     <section
       id={id}
-      className={`scroll-mt-28 border-t border-white/10 py-20 sm:py-24 ${className ?? ""}`}
+      className={`scroll-mt-24 border-t border-white/10 py-14 sm:scroll-mt-28 sm:py-20 lg:py-24 ${className ?? ""}`}
     >
-      <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:px-8">
-        <div className="max-w-3xl space-y-5">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-300/80">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 sm:gap-12 sm:px-6 lg:px-8">
+        <div className="min-w-0 max-w-3xl space-y-5">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300/80 sm:tracking-[0.35em]">
             {eyebrow}
           </p>
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">
               {title}
             </h2>
             <p className="text-base leading-8 text-slate-300 sm:text-lg">
@@ -38,7 +38,11 @@ export function SectionShell({
             </p>
           </div>
         </div>
-        <div className={contentClassName ?? "grid gap-6 lg:grid-cols-3"}>{children}</div>
+        <div
+          className={contentClassName ?? "grid min-w-0 gap-6 md:grid-cols-2 xl:grid-cols-3"}
+        >
+          {children}
+        </div>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+"use client";
+
 import dynamic from "next/dynamic";
 import { Cloud, Code2, Gauge, Server } from "lucide-react";
 import { SectionShell } from "@/components/layout/section-shell";
@@ -10,9 +12,9 @@ const SkillsRadarChart = dynamic(
       (module) => module.SkillsRadarChart,
     ),
   {
-    ssr: false,
+      ssr: false,
     loading: () => (
-      <div className="flex h-[360px] items-center justify-center rounded-3xl border border-white/10 bg-slate-950/40 text-sm text-slate-400">
+      <div className="flex h-[280px] items-center justify-center rounded-2xl border border-white/10 bg-slate-950/40 text-sm text-slate-400 sm:h-[360px] sm:rounded-3xl">
         Loading skills analytics...
       </div>
     ),
@@ -32,14 +34,16 @@ export function SkillsSection() {
       eyebrow="Skills Analytics"
       title="Breadth across frontend, backend, DevOps, and cloud-native delivery."
       description="The skills section combines visual breadth with the engineering priorities that shape how systems are designed, optimized, and shipped."
-      contentClassName="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]"
+      contentClassName="grid min-w-0 gap-6 xl:grid-cols-[1.15fr_0.85fr]"
     >
       <Panel
         eyebrow="Radar Overview"
         title="A balanced profile across product engineering and delivery systems."
         description="The chart emphasizes how frontend, backend, DevOps, cloud, API, and delivery disciplines reinforce each other in production environments."
       >
-        <SkillsRadarChart />
+        <div className="h-[280px] min-w-0 sm:h-[360px]">
+          <SkillsRadarChart />
+        </div>
       </Panel>
       <div className="grid gap-6">
         <div className="grid gap-6">
@@ -53,11 +57,11 @@ export function SkillsSection() {
                 title={category.title}
                 description={category.description}
               >
-                <div className="flex items-start justify-between gap-4 text-sm text-slate-300">
+                <div className="grid gap-4 text-sm text-slate-300 sm:grid-cols-[auto_1fr] sm:items-start">
                   <div className="inline-flex rounded-2xl border border-cyan-300/20 bg-cyan-300/10 p-3 text-cyan-200">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <div className="max-w-xs text-right leading-6 text-slate-400">
+                  <div className="min-w-0 leading-6 text-slate-400 sm:text-right">
                     {category.metric}
                   </div>
                 </div>
@@ -65,10 +69,10 @@ export function SkillsSection() {
             );
           })}
         </div>
-        <div className="grid gap-4 sm:grid-cols-3 xl:grid-cols-1">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1">
           {skillMetrics.map((metric) => (
             <Panel key={metric.label} className="h-full">
-              <div className="flex items-start justify-between gap-4">
+              <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-start">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-300/75">
                     {metric.label}

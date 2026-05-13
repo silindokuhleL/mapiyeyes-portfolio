@@ -5,6 +5,8 @@ import ReactECharts from "echarts-for-react";
 import { skillRadar } from "@/data/portfolio";
 
 export function SkillsRadarChart() {
+  const indicators = skillRadar.indicators.map(({ name }) => ({ name }));
+
   const option: EChartsOption = {
     animationDuration: 900,
     tooltip: {
@@ -17,7 +19,7 @@ export function SkillsRadarChart() {
     radar: {
       center: ["50%", "52%"],
       radius: "70%",
-      indicator: skillRadar.indicators,
+      indicator: indicators,
       splitNumber: 4,
       axisName: {
         color: "#cbd5e1",
@@ -72,7 +74,7 @@ export function SkillsRadarChart() {
     <ReactECharts
       option={option}
       opts={{ renderer: "svg" }}
-      style={{ height: "360px", width: "100%" }}
+      style={{ height: "100%", minHeight: "280px", width: "100%" }}
     />
   );
 }

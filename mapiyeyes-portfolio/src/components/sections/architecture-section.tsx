@@ -17,7 +17,7 @@ export function ArchitectureSection() {
       eyebrow="Architecture"
       title="System design is presented as a practical communication skill."
       description="The section maps how experience layers, backend services, data concerns, and delivery infrastructure fit together to support maintainable software systems."
-      contentClassName="grid gap-6 lg:grid-cols-2"
+      contentClassName="grid min-w-0 gap-6 lg:grid-cols-2"
     >
       {architectureLayers.map((layer) => {
         const Icon = iconMap[layer.icon as keyof typeof iconMap];
