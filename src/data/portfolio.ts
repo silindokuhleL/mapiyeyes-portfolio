@@ -799,9 +799,9 @@ export const contactMethods: ContactMethod[] = [
     icon: "mail",
   },
   {
-    href: "https://www.linkedin.com/in/silindokuhle-mapiyeye-developer",
+    href: "https://www.linkedin.com/in/silindokuhle-mapiyeye",
     label: "LinkedIn",
-    value: "linkedin.com/in/silindokuhle-mapiyeye-developer",
+    value: "linkedin.com/in/silindokuhle-mapiyeye",
     detail: "Use LinkedIn for networking, recruiter outreach, contract conversations, and public professional context.",
     icon: "linkedin",
   },

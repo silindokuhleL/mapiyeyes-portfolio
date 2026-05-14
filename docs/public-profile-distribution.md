@@ -155,5 +155,5 @@ Silindokuhle Mapiyeye
 Full-Stack SaaS Engineer
 Portfolio: https://mapiyeyes-portfolio.vercel.app
 GitHub: https://github.com/silindokuhleL
-LinkedIn: https://www.linkedin.com/in/silindokuhle-mapiyeye-developer
+LinkedIn: https://www.linkedin.com/in/silindokuhle-mapiyeye
 ```
