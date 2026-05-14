@@ -192,6 +192,7 @@
 - Connected the existing custom event helper to Vercel custom events through `track()`.
 - Browser verification completed against the local portfolio page on this branch: page loaded successfully and the Vercel analytics script was present.
 - Follow-up outside code: open the Vercel project dashboard, go to Analytics, and make sure Web Analytics is enabled for the project.
+- Vercel Web Analytics was enabled in the dashboard after merge; a follow-up production redeploy was triggered so the analytics script can be promoted on the live domain.
 
 ### P3: Local Repository Cleanup
 - Status: `completed`
