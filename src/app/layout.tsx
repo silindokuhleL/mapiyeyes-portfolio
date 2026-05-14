@@ -62,7 +62,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background text-foreground antialiased`}
       >
         {children}
-        <Analytics />
+        <Analytics mode="production" />
       </body>
     </html>
   );
