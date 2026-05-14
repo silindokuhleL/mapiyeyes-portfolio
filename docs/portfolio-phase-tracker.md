@@ -206,6 +206,7 @@
 - Updated portfolio metadata to use the real production domain: `https://mapiyeyes-portfolio.vercel.app`.
 - Added sharper Open Graph and Twitter metadata.
 - Added a generated `opengraph-image` route for social preview cards.
+- Added generated green/black brand icon routes for browser and Apple previews.
 - Browser verification completed against the local portfolio page on this branch: hero availability copy, CV links, and generated OG image route loaded successfully.
 - Deferred: custom domain remains optional for later.
 
