@@ -78,6 +78,23 @@ Completion note:
 - Browser verified `https://github.com/silindokuhleL` shows the Stack Map, Engineering Snapshot, system-thinking section, Build Direction, What I Can Build, Current Public Work, and portfolio link.
 - Browser verified there are no generated GitHub stats cards or external badge references after the showcase update.
 
+## GitHub README Animated Skill Wall
+
+Status: `completed`
+
+Goal: add a stronger visual skill showcase without relying on remote badge or stats services.
+
+- [x] Added a local `assets/skill-showcase.svg` asset to the GitHub profile README repo.
+- [x] Added the animated skill wall near the top of the README, directly after the contact table.
+- [x] Included the core stack: Laravel, PHP, Next.js, React, TypeScript, Tailwind, MySQL, Redis, Docker, AWS, Vercel, GitHub, Linux, APIs, RBAC, and AI tools.
+- [x] Kept the asset self-contained inside the repo so it can render without third-party badge services.
+- [x] Browser-tested the public GitHub profile after merging the change.
+
+Completion note:
+
+- GitHub profile repo `silindokuhleL/silindokuhleL` was updated on branch `task/github-readme-skill-motion`, merged to `main`, and pushed.
+- Browser verified `https://github.com/silindokuhleL` contains the animated skill showcase image element and still has no generated GitHub stats cards or external badge references.
+
 ## Manual Updates Needed
 
 These require logged-in account access and should be completed manually before this priority is fully done.
