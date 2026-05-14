@@ -95,6 +95,29 @@ Completion note:
 - GitHub profile repo `silindokuhleL/silindokuhleL` was updated on branch `task/github-readme-skill-motion`, merged to `main`, and pushed.
 - Browser verified `https://github.com/silindokuhleL` contains the animated skill showcase image element and still has no generated GitHub stats cards or external badge references.
 
+## GitHub README Client Redesign
+
+Status: `completed`
+
+Goal: make the public GitHub profile speak directly to clients and freelance buyers.
+
+- [x] Rewrote the hero intro around client outcomes and production-ready SaaS delivery.
+- [x] Added a clear value proposition explaining why to hire Silindokuhle.
+- [x] Added a prominent availability section and stronger project-start CTA.
+- [x] Renamed internal sections to client-facing language: `What I Bring to Your Project`, `Services`, `How We Work Together`, `Recent Work and Case Studies`, and `What You Can Expect`.
+- [x] Replaced internal jargon such as `public engineering proof` and `Build Direction`.
+- [x] Added a local professional profile mark.
+- [x] Refined the animated skill wall with a darker premium green palette and client-relevant stack priority.
+- [x] Added grouped stack badges with Laravel, Next.js, Stripe, Sanctum, Inertia.js, Vercel, GitHub Actions, and related tools.
+- [x] Added GitHub stats and streak cards lower on the page as optional activity signals.
+- [x] Browser-tested the public GitHub profile after merging the change.
+
+Completion note:
+
+- GitHub profile repo `silindokuhleL/silindokuhleL` was updated on branch `task/github-readme-client-redesign`, merged to `main`, and pushed.
+- Browser verified `https://github.com/silindokuhleL` shows the client hero, value prop, availability, services, working process, case studies, expectations, start-project CTA, local profile mark, skill showcase, badges, GitHub stats, and streak card.
+- Browser verified the old internal phrases `public engineering proof`, `Build Direction`, and `I like building systems` are no longer present.
+
 ## Manual Updates Needed
 
 These require logged-in account access and should be completed manually before this priority is fully done.

@@ -169,6 +169,7 @@
 - Completed GitHub README look/feel polish: removed image-based badges and generated stats cards, switched the public profile to a text-first README, and Browser verified the live GitHub profile after merge.
 - Completed GitHub README skill showcase: added Engineering Snapshot, Stack Map, Mermaid diagrams, capability table, and richer public-work proof while avoiding generated stats cards and external badge images.
 - Completed GitHub README animated skill wall: added a local self-contained SVG skill showcase near the top of the public profile and Browser verified it renders without remote badge/stat dependencies.
+- Completed GitHub README client redesign: rewrote the profile around freelance/client outcomes, added availability, services, working process, case-study framing, profile mark, refined stack visual, grouped logo badges, and GitHub activity cards; Browser verified the live profile after merge.
 - Blocked manual action: add the live portfolio URL to LinkedIn.
 - Blocked manual action: add the live portfolio URL to relevant job platforms.
 - Blocked manual action: add the live portfolio URL to the email signature, if one is used.
