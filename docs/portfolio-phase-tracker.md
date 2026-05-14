@@ -137,6 +137,28 @@
 
 ## Next Priority Queue
 
+## Branch Workflow Rule
+
+- Work on exactly one priority item at a time.
+- Create one branch per priority item using `task/<short-item-name>`.
+- Make small commits inside that branch.
+- Run code checks that match the change, usually `pnpm run build` for portfolio code/content changes.
+- Use Browser to verify the changed behavior or live page before marking the branch done.
+- Merge the branch back into `master` before starting the next priority item.
+- Do not start another priority branch while the current priority branch is unmerged or blocked.
+- If a priority item requires manual action outside the repo, mark it `blocked` with the exact user action needed.
+
+## Branch Plan
+
+| Priority | Item | Branch | Status | Browser Test Required |
+| --- | --- | --- | --- | --- |
+| P0 | Public Profile Distribution | `task/public-profile-distribution` | pending | Verify live portfolio URL and any public profile pages we can access |
+| P1 | CV Refresh | `task/cv-refresh` | pending | Verify the live CV PDF download after deploy |
+| P2 | Analytics Decision | `task/analytics-decision` | pending | Verify tracked interactions in Browser or document decision if deferred |
+| P3 | Local Repository Cleanup | `task/local-repo-cleanup` | completed | Repo status check only; no browser-facing change |
+| P4 | Optional Portfolio Polish | `task/portfolio-polish` | pending | Verify visual/meta changes in Browser |
+| P5 | Deferred Project-Proof Work | `task/project-proof-deferred` | deferred | Browser test after future project proof changes |
+
 ### P0: Public Profile Distribution
 - Status: `pending`
 - Add `https://mapiyeyes-portfolio-jq9s.vercel.app` to LinkedIn.
@@ -158,8 +180,8 @@
 - If analytics are not needed yet, leave the lightweight helper in place and defer dashboard work.
 
 ### P3: Local Repository Cleanup
-- Status: `in_progress`
-- Remove the untracked placeholder `SKILL.md` from the portfolio repo.
+- Status: `completed`
+- Removed the untracked placeholder `SKILL.md` from the portfolio repo.
 - Keep the repo clean except for intentional tracked portfolio files.
 
 ### P4: Optional Portfolio Polish
