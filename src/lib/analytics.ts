@@ -1,3 +1,5 @@
+import { track as trackVercelEvent } from "@vercel/analytics";
+
 export type PortfolioEventName =
   | "contact_click"
   | "cv_download"
@@ -31,6 +33,7 @@ export function trackPortfolioEvent(
   window.gtag?.("event", eventName, properties);
   window.plausible?.(eventName, { props: properties });
   window.posthog?.capture?.(eventName, properties);
+  trackVercelEvent(eventName, properties);
 
   if (process.env.NODE_ENV !== "production") {
     console.info("[portfolio:event]", eventName, properties);

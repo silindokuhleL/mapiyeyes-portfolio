@@ -154,7 +154,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | Public Profile Distribution | `task/public-profile-distribution` | blocked | Verify live portfolio URL and any public profile pages we can access |
 | P1 | CV Refresh | `task/cv-refresh` | completed | Verify the live CV PDF download after deploy |
-| P2 | Analytics Decision | `task/analytics-decision` | pending | Verify tracked interactions in Browser or document decision if deferred |
+| P2 | Analytics Decision | `task/analytics-decision` | completed | Verify tracked interactions in Browser or document decision if deferred |
 | P3 | Local Repository Cleanup | `task/local-repo-cleanup` | completed | Repo status check only; no browser-facing change |
 | P4 | Optional Portfolio Polish | `task/portfolio-polish` | pending | Verify visual/meta changes in Browser |
 | P5 | Deferred Project-Proof Work | `task/project-proof-deferred` | deferred | Browser test after future project proof changes |
@@ -185,10 +185,13 @@
 - Direct Browser automation against the PDF viewer route was blocked by Browser security policy, so PDF content was verified through local PDF parsing instead.
 
 ### P2: Analytics Decision
-- Status: `pending`
-- Current tracking helper covers `cv_download`, `contact_click`, and `project_repo_click`.
-- Decide whether to connect tracking to Vercel Analytics, Plausible, or a simple custom reporting endpoint.
-- If analytics are not needed yet, leave the lightweight helper in place and defer dashboard work.
+- Status: `completed`
+- Decision: connect the portfolio to Vercel Web Analytics because the site is already deployed on Vercel and needs simple visitor/page-view reporting without a separate analytics vendor.
+- Installed `@vercel/analytics` and added the Vercel `Analytics` component to the root app layout.
+- Kept the existing tracking helper for `cv_download`, `contact_click`, and `project_repo_click`.
+- Connected the existing custom event helper to Vercel custom events through `track()`.
+- Browser verification completed against the local portfolio page on this branch: page loaded successfully and the Vercel analytics script was present.
+- Follow-up outside code: open the Vercel project dashboard, go to Analytics, and make sure Web Analytics is enabled for the project.
 
 ### P3: Local Repository Cleanup
 - Status: `completed`
