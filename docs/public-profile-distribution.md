@@ -41,6 +41,24 @@ Completion note:
 - GitHub profile repo `silindokuhleL/silindokuhleL` was updated on branch `task/github-readme-fix`, merged to `main`, and pushed.
 - Browser verified the public profile at `https://github.com/silindokuhleL`.
 
+## GitHub README Look And Feel Polish
+
+Status: `completed`
+
+Goal: make the GitHub profile feel cleaner and avoid broken external images.
+
+- [x] Removed image-based badges and generated stats cards so the profile does not depend on external image services.
+- [x] Replaced the dashboard-style layout with a calmer text-first profile.
+- [x] Kept the portfolio, LinkedIn, and email links visible near the top.
+- [x] Kept real public projects in a simple table.
+- [x] Browser-tested the public GitHub profile after merging the change.
+
+Completion note:
+
+- GitHub profile repo `silindokuhleL/silindokuhleL` was updated on branch `task/github-readme-polish`, merged to `main`, and pushed.
+- Browser verified `https://github.com/silindokuhleL` shows the polished README with the portfolio URL, role, email, Focus, Public Work, and Working Style sections.
+- The polished README no longer uses generated GitHub stats cards or image badges.
+
 ## Manual Updates Needed
 
 These require logged-in account access and should be completed manually before this priority is fully done.
