@@ -164,6 +164,7 @@
 - Live URL to distribute: `https://mapiyeyes-portfolio.vercel.app`.
 - Completed: GitHub profile README was updated in `silindokuhleL/silindokuhleL` on branch `task/public-profile-distribution`, merged to `main`, and pushed.
 - Browser verified the public GitHub profile shows the portfolio URL, `Full-Stack SaaS Engineer`, and `slmapiyeye@gmail.com`.
+- Added a GitHub README fix checklist to `docs/public-profile-distribution.md` so the profile README can be tightened before P0 is fully complete.
 - Blocked manual action: add the live portfolio URL to LinkedIn.
 - Blocked manual action: add the live portfolio URL to relevant job platforms.
 - Blocked manual action: add the live portfolio URL to the email signature, if one is used.
