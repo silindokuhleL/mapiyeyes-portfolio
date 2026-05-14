@@ -2,7 +2,8 @@
 
 ## Project
 - Name: `mapiyeyes-portfolio`
-- Active app root: `/Users/mapiyeyes/Documents/programming/mapiyeyes-programming/mapiyeyes-portfolio`
+- Active app root: `/Users/mapiyeyes/Documents/programming/mapiyeyes-programming`
+- Production URL: `https://mapiyeyes-portfolio-jq9s.vercel.app`
 - Candidate: `Silindokuhle Lammack Mapiyeye`
 - Brand title: `Full-Stack SaaS Engineer`
 
@@ -27,7 +28,7 @@
 
 ## Phase 1 Completion Notes
 - Confirmed the top-level Next.js app is the intended root.
-- Confirmed there is a duplicated nested starter app that should not be used.
+- Removed the duplicated nested starter app and moved the deployable Next.js app to the repository root.
 - Audited current dependencies and verified required portfolio libraries are not yet installed.
 - Captured the candidate positioning, IA, design direction, architecture plan, and phased execution path.
 
@@ -130,6 +131,9 @@
 - Cleaned the Skills radar chart configuration during Browser QA so the portfolio no longer depends on stale ECharts tick overrides.
 - Added lightweight portfolio analytics tracking without a vendor dependency. Events currently covered: `cv_download`, `contact_click`, and `project_repo_click`.
 - Browser Use verified a real `contact_click` event from the visible hero contact button. CV/project analytics are wired through the same helper and validated by lint/build.
+- Moved the application to the repository root so Vercel can deploy from `./` without a Root Directory override.
+- Production deployment is live at `https://mapiyeyes-portfolio-jq9s.vercel.app`.
+- Browser Use verified the live production site: title is `Silindokuhle Lammack Mapiyeye | Full-Stack SaaS Engineer`, H1 is `Full-Stack SaaS Engineer`, no 404 text is present, and two CV download links are available.
 
 ## Per-Phase QA Log
 
@@ -178,6 +182,8 @@
 - [x] Responsive QA completed across mobile and desktop anchor flows
 - [x] Contact and metadata verified
 - [x] Deployment notes prepared
+- [x] Production deployment verified with Browser Use
+- [x] CV download links verified on production
 
 ## Notes for Git Workflow
 - Create one commit after each completed phase.
@@ -185,6 +191,5 @@
 - If a phase grows too large, split into subcommits but preserve the planned summary commit message in the history notes.
 
 ## Open Decisions
-- Whether to remove the duplicated nested app from the repository later.
-- Portfolio URL after deployment.
 - Exact metrics wording where real numeric outcomes are not yet documented.
+- Whether to make the Beauty Salon frontend/backend repositories public or keep the public portfolio links hidden until access is ready.

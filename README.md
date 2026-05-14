@@ -2,6 +2,10 @@
 
 Personal portfolio for Silindokuhle Mapiyeye, a Full-Stack SaaS Engineer focused on Laravel, Next.js, REST APIs, integrations, RBAC, payments, AI workflows, queues, and cloud deployments.
 
+## Live Site
+
+Production: https://mapiyeyes-portfolio-jq9s.vercel.app
+
 ## Purpose
 
 This portfolio is the public proof hub for my work:
@@ -15,16 +19,13 @@ This portfolio is the public proof hub for my work:
 ## Stack
 
 - Next.js.
+- React.
 - TypeScript.
-- Tailwind CSS.
-- Coss UI.
+- Tailwind CSS v4.
 - Lucide icons.
 - Framer Motion.
-- zod.
-- Vercel Analytics or Plausible.
-- Vitest.
-- Testing Library.
-- Playwright.
+- GSAP.
+- Apache ECharts.
 
 ## Sections
 
@@ -38,10 +39,11 @@ This portfolio is the public proof hub for my work:
 
 ## Featured Projects
 
+- Beauty Salon Management Platform.
 - Document Search Portal.
 - Risk Management / RBAC Platform.
 - Prosuite Chatbot Hackathon.
-- Background Job Runner, if strong enough after review.
+- Personal Developer Portfolio.
 
 ## Local Development
 
@@ -71,4 +73,4 @@ The portfolio is being built around practical proof:
 
 ## Status
 
-In progress. The portfolio is being rebuilt around proof, case studies, and a stronger global-facing developer profile.
+Live and deployed. The portfolio remains a living proof system: keep adding screenshots, metrics, live demos, and stronger README documentation as project evidence improves.

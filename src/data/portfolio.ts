@@ -713,6 +713,10 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       "A Next.js portfolio system built to position Silindokuhle as a Full-Stack SaaS Engineer, collect project proof, and support future contract/freelance opportunities.",
     links: [
       {
+        label: "Live Site",
+        href: "https://mapiyeyes-portfolio-jq9s.vercel.app",
+      },
+      {
         label: "View GitHub Repo",
         href: "https://github.com/silindokuhleL/mapiyeyes-portfolio",
       },
@@ -744,8 +748,8 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       "Prioritized mobile responsiveness because recruiters and clients may view the profile from phones.",
     ],
     proofNeeded: [
-      "Deploy the portfolio and add the live URL to GitHub, LinkedIn, and the CV.",
-      "Add analytics for project clicks, CV downloads, and contact clicks.",
+      "Add the live portfolio URL to LinkedIn and the next generated CV version.",
+      "Connect the lightweight analytics events to a reporting dashboard if visitor reporting becomes important.",
       "Keep the CV updated as new project metrics, screenshots, and live links are verified.",
     ],
   },
