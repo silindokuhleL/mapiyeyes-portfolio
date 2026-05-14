@@ -34,6 +34,6 @@ export const primaryNavigation: NavItem[] = [
 
 export const contactLinks: ContactLink[] = [
   { href: "mailto:slmapiyeye@gmail.com", label: "Email" },
-  { href: "https://www.linkedin.com/in/silindokuhle-mapiyeye-developer", label: "LinkedIn" },
+  { href: "https://www.linkedin.com/in/silindokuhle-mapiyeye", label: "LinkedIn" },
   { href: "https://github.com/silindokuhleL", label: "GitHub" },
 ];
