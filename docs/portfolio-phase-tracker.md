@@ -152,7 +152,7 @@
 
 | Priority | Item | Branch | Status | Browser Test Required |
 | --- | --- | --- | --- | --- |
-| P0 | Public Profile Distribution | `task/public-profile-distribution` | pending | Verify live portfolio URL and any public profile pages we can access |
+| P0 | Public Profile Distribution | `task/public-profile-distribution` | blocked | Verify live portfolio URL and any public profile pages we can access |
 | P1 | CV Refresh | `task/cv-refresh` | pending | Verify the live CV PDF download after deploy |
 | P2 | Analytics Decision | `task/analytics-decision` | pending | Verify tracked interactions in Browser or document decision if deferred |
 | P3 | Local Repository Cleanup | `task/local-repo-cleanup` | completed | Repo status check only; no browser-facing change |
@@ -160,11 +160,14 @@
 | P5 | Deferred Project-Proof Work | `task/project-proof-deferred` | deferred | Browser test after future project proof changes |
 
 ### P0: Public Profile Distribution
-- Status: `pending`
-- Add `https://mapiyeyes-portfolio-jq9s.vercel.app` to LinkedIn.
-- Add the live portfolio URL to GitHub profile bio / profile README.
-- Add the live portfolio URL to relevant job platforms.
-- Add the live portfolio URL to the email signature, if one is used.
+- Status: `blocked`
+- Live URL to distribute: `https://mapiyeyes-portfolio.vercel.app`.
+- Completed: GitHub profile README was updated in `silindokuhleL/silindokuhleL` on branch `task/public-profile-distribution`, merged to `main`, and pushed.
+- Browser verified the public GitHub profile shows the portfolio URL, `Full-Stack SaaS Engineer`, and `slmapiyeye@gmail.com`.
+- Blocked manual action: add the live portfolio URL to LinkedIn.
+- Blocked manual action: add the live portfolio URL to relevant job platforms.
+- Blocked manual action: add the live portfolio URL to the email signature, if one is used.
+- Ready-to-paste copy is documented in `docs/public-profile-distribution.md`.
 
 ### P1: CV Refresh
 - Status: `pending`
