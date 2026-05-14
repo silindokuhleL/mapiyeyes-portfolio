@@ -13,28 +13,33 @@
 
 ## GitHub README Fix Checklist
 
-Status: `pending`
+Status: `completed`
 
 Goal: make the GitHub profile README accurate, professional, and aligned with the live portfolio.
 
-- [ ] Replace placeholder profile data such as `silindokuhle@example.com`, fake API URLs, and demo project links.
-- [ ] Align the title with the portfolio: `Full-Stack SaaS Engineer`.
-- [ ] Keep the live portfolio URL visible near the top.
-- [ ] Keep the correct LinkedIn URL visible near the top.
-- [ ] Keep the correct email visible near the top.
-- [ ] Review all claimed metrics, such as project counts, deployments, uptime, code reviews, or performance numbers, and remove anything that is not verified.
-- [ ] Replace fictional project examples with real project links or remove them.
-- [ ] Add a short, human-readable intro before the code-style profile block.
-- [ ] Make the README easier to skim on mobile.
-- [ ] Browser-test the public GitHub profile after changes.
+- [x] Replace placeholder profile data such as `silindokuhle@example.com`, fake API URLs, and demo project links.
+- [x] Align the title with the portfolio: `Full-Stack SaaS Engineer`.
+- [x] Keep the live portfolio URL visible near the top.
+- [x] Keep the correct LinkedIn URL visible near the top.
+- [x] Keep the correct email visible near the top.
+- [x] Review all claimed metrics, such as project counts, deployments, uptime, code reviews, or performance numbers, and remove anything that is not verified.
+- [x] Replace fictional project examples with real project links or remove them.
+- [x] Add a short, human-readable intro before the code-style profile block.
+- [x] Make the README easier to skim on mobile.
+- [x] Browser-test the public GitHub profile after changes.
 
 Browser verification checklist:
 
-- [ ] Public GitHub profile opens without errors.
-- [ ] Portfolio URL is visible.
-- [ ] Role/title is visible.
-- [ ] Correct email is visible.
-- [ ] No obvious placeholder email, fake API URL, or empty portfolio link remains visible.
+- [x] Public GitHub profile opens without errors.
+- [x] Portfolio URL is visible.
+- [x] Role/title is visible.
+- [x] Correct email is visible.
+- [x] No obvious placeholder email, fake API URL, or empty portfolio link remains visible.
+
+Completion note:
+
+- GitHub profile repo `silindokuhleL/silindokuhleL` was updated on branch `task/github-readme-fix`, merged to `main`, and pushed.
+- Browser verified the public profile at `https://github.com/silindokuhleL`.
 
 ## Manual Updates Needed
 
