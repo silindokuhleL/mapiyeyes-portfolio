@@ -4,7 +4,7 @@ Personal portfolio for Silindokuhle Mapiyeye, a Full-Stack SaaS Engineer focused
 
 ## Live Site
 
-Production: https://mapiyeyes-portfolio-jq9s.vercel.app
+Production: https://mapiyeyes-portfolio.vercel.app
 
 ## Purpose
 
@@ -77,8 +77,14 @@ Live and deployed. The portfolio remains a living proof system: keep adding scre
 
 ## Current Priorities
 
-1. Add the live portfolio URL to public profiles: LinkedIn, GitHub, job platforms, and email signature.
-2. Update the CV with the live portfolio URL, regenerate the PDF, and replace `public/cv/Silindokuhle-Mapiyeye-CV.pdf`.
-3. Decide whether to connect the existing lightweight analytics events to a reporting dashboard.
-4. Polish conversion details: custom domain, Open Graph image, favicon/brand polish, and availability copy.
-5. Defer project-proof upgrades until after the next from-scratch projects are planned and started.
+1. Add the live portfolio URL to LinkedIn, job platforms, and email signature fields.
+2. Decide whether to buy and connect a custom domain.
+3. Plan the next from-scratch projects before adding more public project proof.
+4. Keep strengthening project proof with screenshots, live demos, README documentation, and measurable outcomes as each project matures.
+
+## Completed Follow-Ups
+
+- GitHub profile README now includes the live portfolio URL, client-facing positioning, availability, skills, and project proof.
+- CV PDF includes the live portfolio URL and is available at `/cv/Silindokuhle-Mapiyeye-CV.pdf`.
+- Vercel Analytics is installed and running in production mode.
+- Open Graph, Twitter preview metadata, generated social preview image, favicon, and Apple icon routes are in place.

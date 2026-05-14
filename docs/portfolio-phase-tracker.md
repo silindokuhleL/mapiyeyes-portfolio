@@ -3,7 +3,7 @@
 ## Project
 - Name: `mapiyeyes-portfolio`
 - Active app root: `/Users/mapiyeyes/Documents/programming/mapiyeyes-programming`
-- Production URL: `https://mapiyeyes-portfolio-jq9s.vercel.app`
+- Production URL: `https://mapiyeyes-portfolio.vercel.app`
 - Candidate: `Silindokuhle Lammack Mapiyeye`
 - Brand title: `Full-Stack SaaS Engineer`
 
@@ -273,5 +273,5 @@
 ## Open Decisions
 - Exact metrics wording where real numeric outcomes are not yet documented.
 - Whether to make the Beauty Salon frontend/backend repositories public or keep the public portfolio links hidden until access is ready.
-- Which analytics destination to use, if any.
 - Whether to buy and connect a custom domain.
+- Which new from-scratch projects should become the next public case studies.
