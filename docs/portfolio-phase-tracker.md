@@ -193,6 +193,7 @@
 - Browser verification completed against the local portfolio page on this branch: page loaded successfully and the Vercel analytics script was present.
 - Follow-up outside code: open the Vercel project dashboard, go to Analytics, and make sure Web Analytics is enabled for the project.
 - Vercel Web Analytics was enabled in the dashboard after merge; a follow-up production redeploy was triggered so the analytics script can be promoted on the live domain.
+- Production verification after enabling Analytics showed the page still loaded but the script was not injected, so the Analytics component was switched to explicit production mode for a follow-up deploy.
 
 ### P3: Local Repository Cleanup
 - Status: `completed`
