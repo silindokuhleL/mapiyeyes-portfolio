@@ -74,3 +74,11 @@ The portfolio is being built around practical proof:
 ## Status
 
 Live and deployed. The portfolio remains a living proof system: keep adding screenshots, metrics, live demos, and stronger README documentation as project evidence improves.
+
+## Current Priorities
+
+1. Add the live portfolio URL to public profiles: LinkedIn, GitHub, job platforms, and email signature.
+2. Update the CV with the live portfolio URL, regenerate the PDF, and replace `public/cv/Silindokuhle-Mapiyeye-CV.pdf`.
+3. Decide whether to connect the existing lightweight analytics events to a reporting dashboard.
+4. Polish conversion details: custom domain, Open Graph image, favicon/brand polish, and availability copy.
+5. Defer project-proof upgrades until after the next from-scratch projects are planned and started.

@@ -135,6 +135,45 @@
 - Production deployment is live at `https://mapiyeyes-portfolio-jq9s.vercel.app`.
 - Browser Use verified the live production site: title is `Silindokuhle Lammack Mapiyeye | Full-Stack SaaS Engineer`, H1 is `Full-Stack SaaS Engineer`, no 404 text is present, and two CV download links are available.
 
+## Next Priority Queue
+
+### P0: Public Profile Distribution
+- Status: `pending`
+- Add `https://mapiyeyes-portfolio-jq9s.vercel.app` to LinkedIn.
+- Add the live portfolio URL to GitHub profile bio / profile README.
+- Add the live portfolio URL to relevant job platforms.
+- Add the live portfolio URL to the email signature, if one is used.
+
+### P1: CV Refresh
+- Status: `pending`
+- Add the live portfolio URL to the source CV.
+- Regenerate the CV PDF.
+- Replace `public/cv/Silindokuhle-Mapiyeye-CV.pdf`.
+- Verify the production CV download opens after redeploy.
+
+### P2: Analytics Decision
+- Status: `pending`
+- Current tracking helper covers `cv_download`, `contact_click`, and `project_repo_click`.
+- Decide whether to connect tracking to Vercel Analytics, Plausible, or a simple custom reporting endpoint.
+- If analytics are not needed yet, leave the lightweight helper in place and defer dashboard work.
+
+### P3: Local Repository Cleanup
+- Status: `in_progress`
+- Remove the untracked placeholder `SKILL.md` from the portfolio repo.
+- Keep the repo clean except for intentional tracked portfolio files.
+
+### P4: Optional Portfolio Polish
+- Status: `pending`
+- Add a custom domain later.
+- Add an Open Graph / social preview image.
+- Improve favicon and brand polish if needed.
+- Add a concise available-for-work or contract availability line if stronger conversion is needed.
+
+### P5: Deferred Project-Proof Work
+- Status: `deferred`
+- Project proof upgrades are intentionally moved to the end.
+- New from-scratch projects should be planned first, then brought back into the portfolio once they have real evidence.
+
 ## Per-Phase QA Log
 
 ### Phase 1 QA
@@ -193,3 +232,5 @@
 ## Open Decisions
 - Exact metrics wording where real numeric outcomes are not yet documented.
 - Whether to make the Beauty Salon frontend/backend repositories public or keep the public portfolio links hidden until access is ready.
+- Which analytics destination to use, if any.
+- Whether to buy and connect a custom domain.
