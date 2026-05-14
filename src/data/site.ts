@@ -12,10 +12,13 @@ export const siteMetadata = {
   name: "Silindokuhle Lammack Mapiyeye",
   shortName: "Silindokuhle Mapiyeye",
   role: "Full-Stack SaaS Engineer",
+  url: "https://mapiyeyes-portfolio.vercel.app",
+  availability:
+    "Currently available for freelance SaaS builds, Laravel APIs, dashboards, payment workflows, and Next.js product interfaces.",
   tagline:
-    "Building Laravel and Next.js systems with strong backend foundations: APIs, auth, RBAC, integrations, payments, AI workflows, queues, caching, and cloud deployments.",
+    "I help businesses build production-ready SaaS platforms with Laravel, Next.js, APIs, RBAC, payments, dashboards, and cloud deployment.",
   description:
-    "Portfolio of Silindokuhle Lammack Mapiyeye, a Full-Stack SaaS Engineer specializing in Laravel, Next.js, REST APIs, RBAC, payments, AI integrations, queues, caching, AWS, Docker, and cloud deployments.",
+    "Hire Silindokuhle Mapiyeye for production-ready Laravel and Next.js SaaS platforms, REST APIs, RBAC, payment workflows, dashboards, AWS, Docker, and cloud deployment.",
 };
 
 export const primaryNavigation: NavItem[] = [

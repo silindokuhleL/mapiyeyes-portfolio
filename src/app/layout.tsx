@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://silindokuhle-mapiyeye.dev"),
+  metadataBase: new URL(siteMetadata.url),
   title: {
-    default: `${siteMetadata.name} | ${siteMetadata.role}`,
+    default: `${siteMetadata.shortName} | ${siteMetadata.role}`,
     template: `%s | ${siteMetadata.name}`,
   },
   description: siteMetadata.description,
@@ -38,16 +38,25 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
   openGraph: {
-    title: `${siteMetadata.name} | ${siteMetadata.role}`,
+    title: `${siteMetadata.shortName} | ${siteMetadata.role}`,
     description: siteMetadata.description,
     type: "website",
-    url: "https://silindokuhle-mapiyeye.dev",
+    url: siteMetadata.url,
     siteName: siteMetadata.name,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: `${siteMetadata.shortName} portfolio preview`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteMetadata.name} | ${siteMetadata.role}`,
+    title: `${siteMetadata.shortName} | ${siteMetadata.role}`,
     description: siteMetadata.description,
+    images: ["/opengraph-image"],
   },
 };
 

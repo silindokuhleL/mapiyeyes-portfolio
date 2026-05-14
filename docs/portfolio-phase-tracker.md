@@ -156,7 +156,7 @@
 | P1 | CV Refresh | `task/cv-refresh` | completed | Verify the live CV PDF download after deploy |
 | P2 | Analytics Decision | `task/analytics-decision` | completed | Verify tracked interactions in Browser or document decision if deferred |
 | P3 | Local Repository Cleanup | `task/local-repo-cleanup` | completed | Repo status check only; no browser-facing change |
-| P4 | Optional Portfolio Polish | `task/portfolio-polish` | pending | Verify visual/meta changes in Browser |
+| P4 | Optional Portfolio Polish | `task/portfolio-polish` | completed | Verify visual/meta changes in Browser |
 | P5 | Deferred Project-Proof Work | `task/project-proof-deferred` | deferred | Browser test after future project proof changes |
 
 ### P0: Public Profile Distribution
@@ -201,11 +201,13 @@
 - Keep the repo clean except for intentional tracked portfolio files.
 
 ### P4: Optional Portfolio Polish
-- Status: `pending`
-- Add a custom domain later.
-- Add an Open Graph / social preview image.
-- Improve favicon and brand polish if needed.
-- Add a concise available-for-work or contract availability line if stronger conversion is needed.
+- Status: `completed`
+- Added a concise available-for-freelance-work line to the hero and contact sections.
+- Updated portfolio metadata to use the real production domain: `https://mapiyeyes-portfolio.vercel.app`.
+- Added sharper Open Graph and Twitter metadata.
+- Added a generated `opengraph-image` route for social preview cards.
+- Browser verification completed against the local portfolio page on this branch: hero availability copy, CV links, and generated OG image route loaded successfully.
+- Deferred: custom domain remains optional for later.
 
 ### P5: Deferred Project-Proof Work
 - Status: `deferred`
