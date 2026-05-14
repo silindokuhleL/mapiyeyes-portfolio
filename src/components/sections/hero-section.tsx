@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Cloud, Code2, Workflow } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, Cloud, Code2, Workflow } from "lucide-react";
 import { HeroEntrance } from "@/components/motion/hero-entrance";
 import { buttonVariants } from "@/components/ui/button";
 import { Panel } from "@/components/ui/panel";
@@ -17,9 +17,9 @@ export function HeroSection() {
     <section id="home" className="hero-shell border-b border-white/10">
       <HeroEntrance className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:min-h-[calc(100svh-81px)] lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:px-8 lg:py-20">
         <div className="relative z-10 flex flex-col gap-8">
-          <div data-hero-animate className="inline-flex max-w-full items-start gap-3 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs leading-6 text-cyan-100 sm:w-fit sm:items-center sm:text-sm">
+          <div data-hero-animate className="inline-flex max-w-full items-start gap-3 rounded-full border border-emerald-300/30 bg-emerald-300/10 px-4 py-2 text-xs leading-6 text-emerald-100 sm:w-fit sm:items-center sm:text-sm">
             <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan-300 sm:mt-0" />
-            <span>Laravel, Next.js, SaaS systems, integrations, and cloud delivery</span>
+            <span>{siteMetadata.availability}</span>
           </div>
           <div data-hero-animate className="space-y-6">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400 sm:text-sm sm:tracking-[0.32em]">
@@ -34,9 +34,23 @@ export function HeroSection() {
           </div>
           <div data-hero-animate className="grid gap-3 sm:flex sm:flex-wrap">
             <a
+              href="mailto:slmapiyeye@gmail.com"
+              onClick={() =>
+                trackPortfolioEvent("contact_click", {
+                  source: "hero_section",
+                  method: "email",
+                  label: "Start a project",
+                })
+              }
+              className={cn(buttonVariants({ variant: "primary" }), "w-full sm:w-auto")}
+            >
+              Start a Project
+              <BriefcaseBusiness className="h-4 w-4" />
+            </a>
+            <a
               href="#experience"
               onClick={(event) => navigateToHash(event, "#experience")}
-              className={cn(buttonVariants({ variant: "primary" }), "w-full sm:w-auto")}
+              className={cn(buttonVariants({ variant: "secondary" }), "w-full sm:w-auto")}
             >
               View Case Studies
               <ArrowRight className="h-4 w-4" />
@@ -51,7 +65,7 @@ export function HeroSection() {
                 });
                 navigateToHash(event, "#contact");
               }}
-              className={cn(buttonVariants({ variant: "secondary" }), "w-full sm:w-auto")}
+              className={cn(buttonVariants({ variant: "ghost" }), "w-full sm:w-auto")}
             >
               Connect Now
             </a>

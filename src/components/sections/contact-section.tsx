@@ -7,6 +7,7 @@ import { Panel } from "@/components/ui/panel";
 import { contactMethods } from "@/data/portfolio";
 import { trackPortfolioEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
+import { siteMetadata } from "@/data/site";
 
 const iconMap = {
   mail: Mail,
@@ -19,14 +20,14 @@ export function ContactSection() {
     <SectionShell
       id="contact"
       eyebrow="Contact"
-      title="Designed to turn interest into a real engineering conversation."
-      description="Use the direct contact paths below for roles, contract work, freelance conversations, or Laravel/Next.js SaaS implementation support."
+      title="Ready to discuss a SaaS build, API, dashboard, or payment workflow."
+      description={siteMetadata.availability}
       contentClassName="grid min-w-0 gap-6 lg:grid-cols-[1.05fr_0.95fr]"
     >
       <Panel
         eyebrow="Let’s Connect"
-        title="Open to SaaS engineering, contract, and freelance conversations."
-        description="This portfolio is built to show Laravel/Next.js execution, backend-heavy product engineering, integrations, deployment maturity, and practical proof."
+        title="Open to freelance SaaS, Laravel, Next.js, and product engineering work."
+        description="Send the goal, workflow, timeline, and budget range if you have one. I will help turn it into a clear technical path."
       >
         <div className="space-y-5">
           <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
@@ -51,7 +52,7 @@ export function ContactSection() {
                 Availability
               </p>
               <p className="mt-3 text-sm leading-7 text-slate-300">
-                Permanent role conversations plus focused contract/freelance work that fits around current commitments.
+                Currently available for focused freelance and contract work with clear scope, milestones, and handoff.
               </p>
             </div>
           </div>
