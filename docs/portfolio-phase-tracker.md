@@ -167,6 +167,7 @@
 - Added a GitHub README fix checklist to `docs/public-profile-distribution.md` so the profile README can be tightened before P0 is fully complete.
 - Completed the GitHub README fix: removed placeholder data, fake API/demo links, and unverified metrics; Browser verified the public profile after the update.
 - Completed GitHub README look/feel polish: removed image-based badges and generated stats cards, switched the public profile to a text-first README, and Browser verified the live GitHub profile after merge.
+- Completed GitHub README skill showcase: added Engineering Snapshot, Stack Map, Mermaid diagrams, capability table, and richer public-work proof while avoiding generated stats cards and external badge images.
 - Blocked manual action: add the live portfolio URL to LinkedIn.
 - Blocked manual action: add the live portfolio URL to relevant job platforms.
 - Blocked manual action: add the live portfolio URL to the email signature, if one is used.

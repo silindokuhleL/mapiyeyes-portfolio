@@ -59,6 +59,25 @@ Completion note:
 - Browser verified `https://github.com/silindokuhleL` shows the polished README with the portfolio URL, role, email, Focus, Public Work, and Working Style sections.
 - The polished README no longer uses generated GitHub stats cards or image badges.
 
+## GitHub README Skill Showcase
+
+Status: `completed`
+
+Goal: make the GitHub profile look more designed while still avoiding broken external image dependencies.
+
+- [x] Added an Engineering Snapshot block for quick positioning.
+- [x] Added a Stack Map table to show backend, frontend, data, cloud, and workflow skills.
+- [x] Added GitHub-rendered Mermaid diagrams for system thinking and build direction.
+- [x] Added a capability table that translates tools into real product work.
+- [x] Kept project links and public proof visible.
+- [x] Browser-tested the public GitHub profile after merging the change.
+
+Completion note:
+
+- GitHub profile repo `silindokuhleL/silindokuhleL` was updated on branch `task/github-readme-skill-showcase`, merged to `main`, and pushed.
+- Browser verified `https://github.com/silindokuhleL` shows the Stack Map, Engineering Snapshot, system-thinking section, Build Direction, What I Can Build, Current Public Work, and portfolio link.
+- Browser verified there are no generated GitHub stats cards or external badge references after the showcase update.
+
 ## Manual Updates Needed
 
 These require logged-in account access and should be completed manually before this priority is fully done.
