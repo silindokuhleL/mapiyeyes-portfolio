@@ -153,7 +153,7 @@
 | Priority | Item | Branch | Status | Browser Test Required |
 | --- | --- | --- | --- | --- |
 | P0 | Public Profile Distribution | `task/public-profile-distribution` | blocked | Verify live portfolio URL and any public profile pages we can access |
-| P1 | CV Refresh | `task/cv-refresh` | pending | Verify the live CV PDF download after deploy |
+| P1 | CV Refresh | `task/cv-refresh` | completed | Verify the live CV PDF download after deploy |
 | P2 | Analytics Decision | `task/analytics-decision` | pending | Verify tracked interactions in Browser or document decision if deferred |
 | P3 | Local Repository Cleanup | `task/local-repo-cleanup` | completed | Repo status check only; no browser-facing change |
 | P4 | Optional Portfolio Polish | `task/portfolio-polish` | pending | Verify visual/meta changes in Browser |
@@ -176,11 +176,13 @@
 - Ready-to-paste copy is documented in `docs/public-profile-distribution.md`.
 
 ### P1: CV Refresh
-- Status: `pending`
-- Add the live portfolio URL to the source CV.
-- Regenerate the CV PDF.
-- Replace `public/cv/Silindokuhle-Mapiyeye-CV.pdf`.
-- Verify the production CV download opens after redeploy.
+- Status: `completed`
+- Added the live portfolio URL to the source CV at `/Users/mapiyeyes/Documents/me-against-the-world/docs/cv/silindokuhle-mapiyeye-cv.md`.
+- Regenerated the CV DOCX and PDF from the source CV.
+- Replaced `public/cv/Silindokuhle-Mapiyeye-CV.pdf`.
+- Verified the generated PDF includes an embedded portfolio hyperlink to `https://mapiyeyes-portfolio.vercel.app/`.
+- Browser verification completed against the local portfolio page on this branch: page loaded successfully and exposed two CV download links.
+- Direct Browser automation against the PDF viewer route was blocked by Browser security policy, so PDF content was verified through local PDF parsing instead.
 
 ### P2: Analytics Decision
 - Status: `pending`
