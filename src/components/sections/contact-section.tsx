@@ -1,8 +1,10 @@
 "use client";
 
-import { ArrowRight, FileText, Handshake, Linkedin, Mail } from "lucide-react";
+import { FormEvent, useState } from "react";
+import { ArrowRight, Handshake, Linkedin, Mail, Send } from "lucide-react";
 import { SectionShell } from "@/components/layout/section-shell";
 import { buttonVariants } from "@/components/ui/button";
+import { CvDownloadLink } from "@/components/ui/cv-download-link";
 import { Panel } from "@/components/ui/panel";
 import { contactMethods } from "@/data/portfolio";
 import { trackPortfolioEvent } from "@/lib/analytics";
@@ -16,6 +18,36 @@ const iconMap = {
 };
 
 export function ContactSection() {
+  const [name, setName] = useState("");
+  const [replyEmail, setReplyEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [formStatus, setFormStatus] = useState<"idle" | "opening">("idle");
+
+  function submitEmail(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setFormStatus("opening");
+
+    const subject = encodeURIComponent("Portfolio project enquiry");
+    const body = encodeURIComponent(
+      [
+        `Name: ${name || "Not provided"}`,
+        `Reply email: ${replyEmail || "Not provided"}`,
+        "",
+        "Project / opportunity:",
+        message || "I would like to discuss a project or opportunity.",
+      ].join("\n"),
+    );
+
+    trackPortfolioEvent("contact_click", {
+      source: "contact_form",
+      method: "email",
+      label: "Send project enquiry",
+    });
+
+    window.location.href = `mailto:slmapiyeye@gmail.com?subject=${subject}&body=${body}`;
+    window.setTimeout(() => setFormStatus("idle"), 1800);
+  }
+
   return (
     <SectionShell
       id="contact"
@@ -70,23 +102,54 @@ export function ContactSection() {
             Start the conversation
             <ArrowRight className="h-4 w-4" />
           </a>
-          <a
-            href="/cv/Silindokuhle-Mapiyeye-CV.pdf"
-            download
-            onClick={() =>
-              trackPortfolioEvent("cv_download", {
-                source: "contact_section",
-                label: "Download CV",
-              })
-            }
-            className={cn(buttonVariants({ variant: "secondary" }), "w-full sm:w-fit")}
-          >
-            Download CV
-            <FileText className="h-4 w-4" />
-          </a>
+          <CvDownloadLink source="contact_section" variant="secondary" className="w-full sm:w-fit" />
         </div>
       </Panel>
       <div className="grid gap-6">
+        <Panel
+          eyebrow="Project Email"
+          title="Send a focused project enquiry."
+          description="Messages go to the main email account used across the portfolio."
+        >
+          <form onSubmit={submitEmail} className="grid gap-4">
+            <div className="grid gap-3 sm:grid-cols-2">
+              <label className="grid gap-2 text-sm font-semibold text-slate-200">
+                Name
+                <input
+                  value={name}
+                  onChange={(event) => setName(event.target.value)}
+                  className="min-h-11 rounded-xl border border-white/10 bg-slate-950/70 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-300/50"
+                  placeholder="Your name"
+                />
+              </label>
+              <label className="grid gap-2 text-sm font-semibold text-slate-200">
+                Reply email
+                <input
+                  type="email"
+                  value={replyEmail}
+                  onChange={(event) => setReplyEmail(event.target.value)}
+                  className="min-h-11 rounded-xl border border-white/10 bg-slate-950/70 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-300/50"
+                  placeholder="you@example.com"
+                />
+              </label>
+            </div>
+            <label className="grid gap-2 text-sm font-semibold text-slate-200">
+              Message
+              <textarea
+                required
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+                rows={5}
+                className="min-h-32 resize-y rounded-xl border border-white/10 bg-slate-950/70 px-3 py-3 text-sm leading-6 text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-300/50"
+                placeholder="Tell me what you want to build, fix, or discuss."
+              />
+            </label>
+            <button type="submit" className={cn(buttonVariants({ variant: "primary" }), "w-full")}>
+              {formStatus === "opening" ? "Opening email..." : "Send project enquiry"}
+              <Send className="h-4 w-4" />
+            </button>
+          </form>
+        </Panel>
         {contactMethods.map((method) => {
           const Icon = iconMap[method.icon as keyof typeof iconMap];
           const isExternal = method.href.startsWith("http") || method.href.startsWith("mailto:");

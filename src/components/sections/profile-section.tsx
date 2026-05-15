@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, BriefcaseBusiness, Code2, FileText, ShieldCheck } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, Code2, ShieldCheck } from "lucide-react";
 import { SectionShell } from "@/components/layout/section-shell";
 import { buttonVariants } from "@/components/ui/button";
+import { CvDownloadLink } from "@/components/ui/cv-download-link";
 import { Panel } from "@/components/ui/panel";
 import { siteMetadata } from "@/data/site";
-import { trackPortfolioEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 const profileProof = [
@@ -89,20 +89,7 @@ export function ProfileSection() {
           description="The profile now has a downloadable CV. The next credibility jump is adding more project proof: screenshots, repositories, live links, architecture notes, and outcomes."
         >
           <div className="grid gap-3 sm:flex sm:flex-wrap">
-            <a
-              href="/cv/Silindokuhle-Mapiyeye-CV.pdf"
-              download
-              onClick={() =>
-                trackPortfolioEvent("cv_download", {
-                  source: "profile_section",
-                  label: "Download CV",
-                })
-              }
-              className={cn(buttonVariants({ variant: "primary" }), "w-full sm:w-auto")}
-            >
-              Download CV
-              <FileText className="h-4 w-4" />
-            </a>
+            <CvDownloadLink source="profile_section" className="w-full sm:w-auto" />
             <a
               href="#projects"
               className={cn(buttonVariants({ variant: "secondary" }), "w-full sm:w-auto")}
