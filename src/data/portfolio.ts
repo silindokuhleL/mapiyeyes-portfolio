@@ -12,6 +12,7 @@ export type IconKey =
   | "gauge"
   | "mail"
   | "linkedin"
+  | "message"
   | "handshake";
 
 export type MetricCard = {
@@ -804,6 +805,13 @@ export const contactMethods: ContactMethod[] = [
     value: "linkedin.com/in/silindokuhle-mapiyeye",
     detail: "Use LinkedIn for networking, recruiter outreach, contract conversations, and public professional context.",
     icon: "linkedin",
+  },
+  {
+    href: "https://wa.me/27679441219?text=Hi%20Silindokuhle%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
+    label: "WhatsApp",
+    value: "+27 67 944 1219",
+    detail: "Best for quick project questions, availability checks, and fast follow-up conversations.",
+    icon: "message",
   },
   {
     href: "https://github.com/silindokuhleL",
