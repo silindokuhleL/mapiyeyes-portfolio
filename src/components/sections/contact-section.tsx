@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { ArrowRight, Handshake, Linkedin, Mail, Send } from "lucide-react";
+import { ArrowRight, Handshake, Linkedin, Mail, MessageCircle, Send } from "lucide-react";
 import { SectionShell } from "@/components/layout/section-shell";
 import { buttonVariants } from "@/components/ui/button";
 import { CvDownloadLink } from "@/components/ui/cv-download-link";
@@ -14,8 +14,12 @@ import { siteMetadata } from "@/data/site";
 const iconMap = {
   mail: Mail,
   linkedin: Linkedin,
+  message: MessageCircle,
   handshake: Handshake,
 };
+
+const whatsappHref =
+  "https://wa.me/27679441219?text=Hi%20Silindokuhle%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.";
 
 export function ContactSection() {
   const [name, setName] = useState("");
@@ -101,6 +105,22 @@ export function ContactSection() {
           >
             Start the conversation
             <ArrowRight className="h-4 w-4" />
+          </a>
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() =>
+              trackPortfolioEvent("contact_click", {
+                source: "contact_section",
+                method: "whatsapp",
+                label: "Chat on WhatsApp",
+              })
+            }
+            className={cn(buttonVariants({ variant: "secondary" }), "w-full sm:w-fit")}
+          >
+            Chat on WhatsApp
+            <MessageCircle className="h-4 w-4" />
           </a>
           <CvDownloadLink source="contact_section" variant="secondary" className="w-full sm:w-fit" />
         </div>
