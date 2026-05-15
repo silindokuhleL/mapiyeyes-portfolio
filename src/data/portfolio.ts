@@ -1,3 +1,5 @@
+import { siteMetadata } from "./site";
+
 export type IconKey =
   | "brain"
   | "workflow"
@@ -807,9 +809,9 @@ export const contactMethods: ContactMethod[] = [
     icon: "linkedin",
   },
   {
-    href: "https://wa.me/27679441219?text=Hi%20Silindokuhle%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
+    href: siteMetadata.whatsapp.href,
     label: "WhatsApp",
-    value: "+27 67 944 1219",
+    value: siteMetadata.whatsapp.display,
     detail: "Best for quick project questions, availability checks, and fast follow-up conversations.",
     icon: "message",
   },

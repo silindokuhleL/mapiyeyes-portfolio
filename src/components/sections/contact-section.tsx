@@ -18,9 +18,6 @@ const iconMap = {
   handshake: Handshake,
 };
 
-const whatsappHref =
-  "https://wa.me/27679441219?text=Hi%20Silindokuhle%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.";
-
 export function ContactSection() {
   const [name, setName] = useState("");
   const [replyEmail, setReplyEmail] = useState("");
@@ -107,7 +104,7 @@ export function ContactSection() {
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
-            href={whatsappHref}
+            href={siteMetadata.whatsapp.href}
             target="_blank"
             rel="noreferrer"
             onClick={() =>

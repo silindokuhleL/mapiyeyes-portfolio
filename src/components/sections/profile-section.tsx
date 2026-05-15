@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, BriefcaseBusiness, Code2, ShieldCheck } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, Code2, MessageCircle, ShieldCheck } from "lucide-react";
 import { SectionShell } from "@/components/layout/section-shell";
 import { buttonVariants } from "@/components/ui/button";
 import { CvDownloadLink } from "@/components/ui/cv-download-link";
 import { Panel } from "@/components/ui/panel";
 import { siteMetadata } from "@/data/site";
+import { trackPortfolioEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 const profileProof = [
@@ -90,6 +91,22 @@ export function ProfileSection() {
         >
           <div className="grid gap-3 sm:flex sm:flex-wrap">
             <CvDownloadLink source="profile_section" className="w-full sm:w-auto" />
+            <a
+              href={siteMetadata.whatsapp.href}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() =>
+                trackPortfolioEvent("contact_click", {
+                  source: "profile_section",
+                  method: "whatsapp",
+                  label: "Chat on WhatsApp",
+                })
+              }
+              className={cn(buttonVariants({ variant: "secondary" }), "w-full sm:w-auto")}
+            >
+              Chat on WhatsApp
+              <MessageCircle className="h-4 w-4" />
+            </a>
             <a
               href="#projects"
               className={cn(buttonVariants({ variant: "secondary" }), "w-full sm:w-auto")}
