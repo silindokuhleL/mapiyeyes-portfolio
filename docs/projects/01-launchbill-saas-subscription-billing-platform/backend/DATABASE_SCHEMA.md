@@ -18,6 +18,8 @@
 - owner_id
 - billing_email
 - status
+- theme_primary_color
+- theme_logo_media_id
 - timestamps
 
 ### account_user
@@ -118,6 +120,19 @@
 - metadata
 - timestamps
 
+### request_logs
+
+- id
+- account_id
+- user_id
+- method
+- path
+- status_code
+- ip_address
+- duration_ms
+- metadata
+- timestamps
+
 ## Schema Rules
 
 - Use foreign keys for ownership relationships.
@@ -125,4 +140,4 @@
 - Index status columns used by dashboards.
 - Store money as integer minor units.
 - Store provider payloads only where useful for debugging.
-
+- Keep request logs free of secrets, passwords, tokens, and sensitive payment data.

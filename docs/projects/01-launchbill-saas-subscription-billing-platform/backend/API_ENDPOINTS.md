@@ -61,10 +61,19 @@ Base path: `/api/v1`
 
 ## Webhooks
 
-- `POST /webhooks/stripe`
-- `POST /webhooks/paystack` if Paystack is added later.
+- `POST /webhooks/payfast`
+- `POST /webhooks/stripe` if Stripe is added later.
 
 ## Audit
 
 - `GET /audit-logs`
 
+## Admin And Theme
+
+- `GET /admin/accounts`
+- `GET /admin/accounts/{account}`
+- `PATCH /admin/accounts/{account}`
+- `GET /admin/audit-logs`
+- `GET /theme`
+- `PATCH /theme`
+- `POST /theme/logo`

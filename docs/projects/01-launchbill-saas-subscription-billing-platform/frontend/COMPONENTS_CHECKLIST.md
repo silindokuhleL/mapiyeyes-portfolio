@@ -7,6 +7,10 @@
 - [ ] Mobile navigation.
 - [ ] Page header.
 - [ ] Breadcrumbs if useful.
+- [ ] Reusable modal.
+- [ ] Reusable tooltip.
+- [ ] Reusable dropdown.
+- [ ] Reusable alert.
 
 ## Data Display
 
@@ -16,15 +20,19 @@
 - [ ] Empty state.
 - [ ] Error state.
 - [ ] Loading skeleton.
+- [ ] ECharts chart wrapper.
 
 ## Forms
 
 - [ ] Text input.
+- [ ] Text input with optional AI assist.
 - [ ] Select.
 - [ ] Currency input.
 - [ ] Date input.
+- [ ] Textarea with optional AI assist.
 - [ ] Form error summary.
 - [ ] Submit button with loading state.
+- [ ] Disabled state pattern.
 
 ## Billing Components
 
@@ -39,4 +47,6 @@
 - [ ] Toast or inline success message.
 - [ ] Confirmation dialog.
 - [ ] Permission-denied panel.
-
+- [ ] Warning alert.
+- [ ] Error alert.
+- [ ] Success alert.

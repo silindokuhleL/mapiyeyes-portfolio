@@ -14,7 +14,7 @@
 - Configure Redis if queues are used.
 - Configure queue worker.
 - Configure scheduler if recurring jobs are used.
-- Configure payment provider secrets.
+- Configure PayFast payment provider secrets.
 - Configure webhook endpoint.
 
 ## Environment Variables
@@ -28,9 +28,10 @@ Backend:
 - `APP_URL`
 - `DB_*`
 - `REDIS_*`
-- `STRIPE_KEY`
-- `STRIPE_SECRET`
-- `STRIPE_WEBHOOK_SECRET`
+- `PAYFAST_MERCHANT_ID`
+- `PAYFAST_MERCHANT_KEY`
+- `PAYFAST_PASSPHRASE`
+- `PAYFAST_WEBHOOK_SECRET` if used by the chosen implementation.
 
 ## Production Checklist
 
@@ -41,4 +42,3 @@ Backend:
 - [ ] Payment webhook registered.
 - [ ] Demo account created.
 - [ ] Logs checked after first test payment.
-

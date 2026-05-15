@@ -33,3 +33,12 @@ Each project has:
 
 A project is not finished when the code works. It is finished when another person can understand what was built, why it matters, how it works, and how to review it.
 
+## Engineering Standards
+
+All projects must follow the shared rules in `00-agent-rules/`:
+
+- `AGENT_RULES.md`
+- `LARAVEL_BACKEND_RULES.md`
+- `NEXTJS_FRONTEND_RULES.md`
+- `TOOLING_AND_QUALITY_RULES.md`
+- `MISSING_AND_IMPROVEMENT_ADVICE.md`
