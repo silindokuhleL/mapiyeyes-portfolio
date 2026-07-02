@@ -504,11 +504,11 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
     links: [
       {
         label: "Frontend Repo",
-        href: "https://github.com/silindokuhleL/beauty-salon-management-frontend",
+        href: "https://github.com/silindokuhleL/beauty-salon-management-frontend-public",
       },
       {
         label: "Backend Repo",
-        href: "https://github.com/silindokuhleL/beauty-salon-management-backend",
+        href: "https://github.com/silindokuhleL/beauty-salon-management-backend-public",
       },
     ],
     screenshots: [
@@ -543,7 +543,7 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       "Implemented or integrated business modules across bookings, payments, products, reporting, staff leave, provider approval, and tenant profile management.",
     ],
     stack: [
-      "Next.js 14",
+      "Next.js 16",
       "React",
       "TypeScript",
       "Laravel 12",
@@ -570,7 +570,7 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       "Separated card, wallet, and cash payment behavior so booking confirmation can match the payment method's real-world flow.",
     ],
     proofNeeded: [
-      "Make the GitHub repositories public or confirm access strategy before sharing links widely.",
+      "Public proof repositories are live and sanitized for portfolio sharing.",
       "Keep the frontend and backend READMEs updated as screenshots, setup details, and deployment notes mature.",
       "Add remaining screenshots for booking confirmation, Paystack callback, product sales, staff leave, and role/permission screens.",
     ],

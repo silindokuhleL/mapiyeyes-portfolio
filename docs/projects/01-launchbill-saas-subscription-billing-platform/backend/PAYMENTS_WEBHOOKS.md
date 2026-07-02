@@ -2,7 +2,7 @@
 
 ## Payment Provider Recommendation
 
-Start with Stripe first because it has strong developer tooling, clean subscription support, test cards, and clear webhook documentation. Paystack can be added later as a regional provider proof point.
+Start with PayFast because it matches the South African market and strengthens local business relevance. Stripe can be added later if the project needs global subscription proof.
 
 ## Payment Features
 
@@ -16,17 +16,22 @@ Start with Stripe first because it has strong developer tooling, clean subscript
 
 ## Webhook Events To Handle
 
-Stripe first:
+PayFast first:
+
+- Payment completed.
+- Payment failed.
+- Subscription created or activated if supported by the chosen PayFast flow.
+- Subscription cancelled if supported by the chosen PayFast flow.
+- Recurring billing notification if supported by the chosen PayFast flow.
+
+If Stripe is added later:
 
 - `checkout.session.completed`
 - `customer.subscription.created`
 - `customer.subscription.updated`
 - `customer.subscription.deleted`
-- `invoice.created`
 - `invoice.paid`
 - `invoice.payment_failed`
-- `payment_intent.succeeded`
-- `payment_intent.payment_failed`
 
 ## Webhook Rules
 
@@ -40,4 +45,3 @@ Stripe first:
 ## Portfolio Proof
 
 The case study should explain how webhooks protect the system from fake payment states and keep billing records aligned with the provider.
-

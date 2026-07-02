@@ -99,14 +99,14 @@
 - Projects section QA repeated at `390px`: Personal Developer Portfolio renders, future-proof wording and deploy caveat are visible, section anchor lands at `88px`, and overflow scan found `0` visible offenders.
 - Promoted Beauty Salon Management Platform to the first featured project based on confirmed SaaS/payment/RBAC/multi-tenancy scope from Silindokuhle.
 - Initial public GitHub checks returned `404` for `beauty-salon-management-frontend`, so local project inspection was needed before tightening the proof copy.
-- Projects section QA repeated at `390px`: Beauty Salon renders before Document Search, payment copy and repo-access caveat are visible, section anchor lands at `88px`, and overflow scan found `0` visible offenders.
+- Projects section QA repeated at `390px`: Beauty Salon renders before Document Search, payment copy and initial repo-access caveat are visible, section anchor lands at `88px`, and overflow scan found `0` visible offenders.
 - Located Beauty Salon frontend locally at `/Users/mapiyeyes/Documents/programming/salon-management/breeze-next` and backend locally at `/Users/mapiyeyes/Documents/programming/salon-management/beauty-salon-management`.
 - Confirmed local Git remotes map to `beauty-salon-management-frontend.git` and `beauty-salon-management-backend.git`.
-- Upgraded Beauty Salon portfolio copy with verified local-code evidence: Next.js 14, React, TypeScript, Laravel 12, Sanctum, Spatie Permission, Paystack, tenant-aware models, booking/payment/product/reporting/provider/staff modules, and admin/customer/staff/super-admin frontend routes.
-- Remaining Beauty Salon proof gaps at this point: repositories need share/public access strategy, screenshots/live walkthrough still need to be captured, and READMEs need to keep evolving with proof assets.
+- Upgraded Beauty Salon portfolio copy with verified local-code evidence: Next.js 16, React, TypeScript, Laravel 12, Sanctum, Spatie Permission, Paystack, tenant-aware models, booking/payment/product/reporting/provider/staff modules, and admin/customer/staff/super-admin frontend routes.
+- Remaining Beauty Salon proof gaps at this point: repositories needed a share/public access strategy, screenshots/live walkthrough still needed to be captured, and READMEs needed to keep evolving with proof assets.
 - Projects section QA repeated at `390px`: verified Beauty Salon wording renders with Paystack, Spatie Permission, backend repo link, README follow-up note, and `0` visible overflow offenders.
 - Replaced Beauty Salon frontend and backend starter READMEs with project-specific setup, module, stack, API, and portfolio-proof documentation.
-- Remaining Beauty Salon proof gaps: repositories need share/public access strategy, screenshots/live walkthrough still need to be captured, and READMEs should keep evolving with proof assets.
+- Remaining Beauty Salon proof gaps: clean public proof repositories are now the shareable GitHub proof; screenshots/live walkthrough still need to be completed, and READMEs should keep evolving with proof assets.
 - Projects section QA repeated at `390px`: Beauty Salon renders with Paystack and README maintenance wording, old README replacement wording is gone, and overflow scan found `0` visible offenders.
 - Beauty Salon backend proof check: local migrations are applied and `php artisan route:list --path=api` reports 143 API routes.
 - Beauty Salon local proof environment started: backend on `http://127.0.0.1:8011`, frontend on `http://127.0.0.1:3200`.
@@ -272,6 +272,6 @@
 
 ## Open Decisions
 - Exact metrics wording where real numeric outcomes are not yet documented.
-- Whether to make the Beauty Salon frontend/backend repositories public or keep the public portfolio links hidden until access is ready.
+- Original Beauty Salon frontend/backend repositories stay private; public portfolio links should use the sanitized public proof repositories.
 - Whether to buy and connect a custom domain.
 - Which new from-scratch projects should become the next public case studies.

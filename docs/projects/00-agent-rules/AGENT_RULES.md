@@ -25,6 +25,9 @@ These rules guide all agent work for the portfolio projects.
 - Frontend owns presentation, user flows, client-side form state, and API integration.
 - The frontend must not fake backend business logic.
 - The backend must expose REST APIs for the frontend.
+- Backend implementation must follow `LARAVEL_BACKEND_RULES.md`.
+- Frontend implementation must follow `NEXTJS_FRONTEND_RULES.md`.
+- Testing, API clients, localization, and reusability must follow `TOOLING_AND_QUALITY_RULES.md`.
 
 ## Documentation Rules
 
@@ -40,4 +43,3 @@ These rules guide all agent work for the portfolio projects.
 - Test the frontend in the browser for desktop and mobile.
 - Validate loading, empty, success, and error states.
 - Keep implementation aligned with the project checklist.
-

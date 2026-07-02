@@ -14,7 +14,7 @@ LaunchBill is a full-stack SaaS billing platform with a Laravel REST API and Nex
 - Next.js frontend.
 - Token-based API auth.
 - Role-based access control.
-- Stripe subscription lifecycle.
+- PayFast payment lifecycle.
 - Payment webhook verification.
 - Queue jobs for billing notifications.
 - Dashboard metrics for revenue and subscription health.
@@ -32,4 +32,3 @@ This project should prove production-style SaaS thinking: secure backend ownersh
 - Database diagram.
 - Test summary.
 - Deployment notes.
-

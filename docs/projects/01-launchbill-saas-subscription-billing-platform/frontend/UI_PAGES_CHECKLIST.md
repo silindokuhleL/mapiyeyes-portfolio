@@ -34,6 +34,8 @@
 - [ ] Role management page.
 - [ ] Settings page.
 - [ ] Audit log page if included.
+- [ ] Admin portal page.
+- [ ] Theme customization page.
 
 ## Responsiveness
 
@@ -44,3 +46,12 @@
 - [ ] Navigation is usable on phone.
 - [ ] No horizontal page overflow.
 
+## Frontend Quality
+
+- [ ] Shared types live in `types/`.
+- [ ] CRUD types are reused across pages.
+- [ ] API calls use the shared Axios client.
+- [ ] Lucide icons only.
+- [ ] Vitest covers core frontend logic.
+- [ ] Playwright covers critical user flows.
+- [ ] User-facing copy is ready for localization.

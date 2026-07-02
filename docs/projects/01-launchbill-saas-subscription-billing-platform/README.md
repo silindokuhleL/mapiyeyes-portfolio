@@ -34,11 +34,10 @@ LaunchBill lets a small SaaS business manage subscription plans, customers, invo
 - Frontend: Next.js with TypeScript.
 - Database: MySQL or PostgreSQL.
 - Cache and queues: Redis.
-- Payments: Stripe first, with Paystack as a possible second provider later.
+- Payments: PayFast first, with Stripe as a possible global provider later.
 - Auth: Laravel Sanctum or token-based API auth.
 - Deployment: Backend on a Laravel-friendly host, frontend on Vercel.
 
 ## Completion Rule
 
 LaunchBill is not complete until the checklist in `PROJECT_CHECKLIST.md` is done and a portfolio case study is ready.
-
