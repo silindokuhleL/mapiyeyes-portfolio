@@ -20,6 +20,8 @@ export function SiteHeader() {
         <button
           type="button"
           aria-label="Toggle menu"
+          aria-controls="mobile-site-navigation"
+          aria-expanded={open}
           className="inline-flex shrink-0 items-center justify-center rounded-lg border border-white/10 p-2 text-slate-300 transition hover:border-cyan-300/40 hover:text-white lg:hidden"
           onClick={() => setOpen((prev) => !prev)}
         >
@@ -39,7 +41,10 @@ export function SiteHeader() {
         </nav>
       </div>
       {open && (
-        <nav className="border-t border-white/10 px-4 py-4 sm:px-6 lg:hidden">
+        <nav
+          id="mobile-site-navigation"
+          className="border-t border-white/10 px-4 py-4 sm:px-6 lg:hidden"
+        >
           <div className="grid grid-cols-2 gap-2 text-sm text-slate-300 sm:flex sm:flex-wrap">
             {primaryNavigation.map((item) => (
               <a
