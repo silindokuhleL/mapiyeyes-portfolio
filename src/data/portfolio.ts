@@ -76,6 +76,7 @@ export type ProjectCaseStudy = {
   stack: string[];
   features: string[];
   decisions: string[];
+  proofLabel?: string;
   proofNeeded: string[];
 };
 
@@ -500,7 +501,7 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
     eyebrow: "Featured Case Study",
     title: "Beauty Salon Management Platform",
     summary:
-      "A full-stack SaaS-style salon management platform covering customer bookings, Paystack payments, wallet/cash flows, product sales, tenant-aware operations, RBAC, reporting, provider approval, and staff workflows.",
+      "A multi-tenant SaaS platform for beauty salons with customer booking, RBAC, provider approval, payments, product sales, staff leave, reporting, and role-specific dashboards.",
     links: [
       {
         label: "Frontend Repo",
@@ -513,34 +514,47 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
     ],
     screenshots: [
       {
-        src: "/projects/beauty-salon/super-admin-dashboard.png",
-        alt: "Beauty Salon Management Platform super admin dashboard",
-        label: "Super Admin",
-        detail: "Provider approval, platform settings, analytics, and cross-tenant administration.",
+        src: "/projects/beauty-salon/provider-approval.png",
+        alt: "Beauty Salon Management Platform provider approval dashboard",
+        label: "Provider Approval",
+        detail: "Super-admin provider review with pending, approved, rejected, and suspended counts.",
       },
       {
-        src: "/projects/beauty-salon/owner-dashboard.png",
-        alt: "Beauty Salon Management Platform owner dashboard",
-        label: "Owner Dashboard",
-        detail: "Owner role, admin navigation, dashboard metrics, and salon reporting surfaces.",
+        src: "/projects/beauty-salon/booking-confirmation.png",
+        alt: "Beauty Salon Management Platform booking confirmation screen",
+        label: "Booking Confirmation",
+        detail: "Confirmed booking reference with customer, salon, service, date, time, and status.",
       },
       {
-        src: "/projects/beauty-salon/payment-management.png",
-        alt: "Beauty Salon Management Platform payment management screen",
-        label: "Payments",
-        detail: "Revenue cards, card/cash transactions, refunds, and mark-paid operations.",
+        src: "/projects/beauty-salon/product-sales.png",
+        alt: "Beauty Salon Management Platform product sales point of sale screen",
+        label: "Product Sales",
+        detail: "Tenant-scoped POS products, sales totals, cart state, and safe product image fallbacks.",
       },
       {
-        src: "/projects/beauty-salon/services-marketplace.png",
+        src: "/projects/beauty-salon/services-marketplace-browser.png",
         alt: "Beauty Salon Management Platform customer services marketplace",
         label: "Marketplace",
-        detail: "Customer-facing services, promotions, discounts, imagery, favorites, and booking CTAs.",
+        detail: "Customer-facing promotions, services, discounts, imagery, favorites, and booking CTAs.",
+      },
+      {
+        src: "/projects/beauty-salon/user-permissions.png",
+        alt: "Beauty Salon Management Platform user management screen",
+        label: "Users & RBAC",
+        detail: "Owner user management and role-aware staff/admin access proof.",
+      },
+      {
+        src: "/projects/beauty-salon/mobile-customer-products.png",
+        alt: "Beauty Salon Management Platform mobile customer products screen",
+        label: "Mobile Product Flow",
+        detail: "Customer product route verified at 390px with no horizontal overflow.",
       },
     ],
     role: [
-      "Built frontend product surfaces for admin, customer, staff, and super-admin workflows.",
-      "Connected the Next.js frontend to a Laravel API with Sanctum authentication and role-aware access patterns.",
-      "Implemented or integrated business modules across bookings, payments, products, reporting, staff leave, provider approval, and tenant profile management.",
+      "Designed, implemented, verified, and packaged the project proof for portfolio use.",
+      "Built frontend product surfaces across public, customer, staff, owner/admin, and super-admin workflows.",
+      "Verified Laravel API behavior for booking, payments, products, staff leave, provider approval, role scopes, and seeded demo data.",
+      "Published sanitized public proof repositories after keeping the original backend history private for secret-safety reasons.",
     ],
     stack: [
       "Next.js 16",
@@ -562,17 +576,21 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       "Product marketplace, inventory management, product sales, purchase history, and refund paths.",
       "Role-aware admin, customer, staff, and super-admin dashboards with protected navigation.",
       "Tenant profile, provider approval, staff leave, reviews, rewards, referrals, reporting, and global search modules.",
+      "Responsive customer views verified at 390px mobile width.",
     ],
     decisions: [
       "Lead the project section with this platform because it shows commercial SaaS depth across money movement, operations, access control, and tenant-aware data.",
       "Used Laravel Sanctum for API authentication and Spatie Permission for roles and permission checks.",
       "Modeled tenant ownership through tenant IDs, tenant profile routes, provider approval workflows, and tenant-scoped backend queries.",
       "Separated card, wallet, and cash payment behavior so booking confirmation can match the payment method's real-world flow.",
+      "Used clean public proof repositories instead of exposing original backend history that contained an old test-key risk.",
     ],
+    proofLabel: "Verified Proof",
     proofNeeded: [
-      "Public proof repositories are live and sanitized for portfolio sharing.",
-      "Keep the frontend and backend READMEs updated as screenshots, setup details, and deployment notes mature.",
-      "Add remaining screenshots for booking confirmation, Paystack callback, product sales, staff leave, and role/permission screens.",
+      "Browser logged in as Owner, Customer, and Super Admin and confirmed role-specific navigation.",
+      "Frontend lint/build passed in both original and clean public proof repositories.",
+      "Targeted backend workflow tests passed across booking, payments, product sales, provider approval, staff leave, and role scopes.",
+      "Selected screenshots are committed into the public frontend proof README.",
     ],
   },
   {
