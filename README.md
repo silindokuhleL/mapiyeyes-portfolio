@@ -94,7 +94,7 @@ Proof included:
 Repositories:
 
 - Frontend: https://github.com/silindokuhleL/risk-management-front-end-next
-- Backend: https://github.com/silindokuhleL/rick-management-backend-api
+- Backend: https://github.com/silindokuhleL/risk-management-backend-api
 
 Proof included:
 

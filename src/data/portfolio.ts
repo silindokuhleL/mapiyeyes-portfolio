@@ -650,7 +650,7 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       },
       {
         label: "Backend Repo",
-        href: "https://github.com/silindokuhleL/rick-management-backend-api",
+        href: "https://github.com/silindokuhleL/risk-management-backend-api",
       },
     ],
     role: [
