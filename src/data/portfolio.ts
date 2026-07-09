@@ -639,10 +639,10 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
     ],
   },
   {
-    eyebrow: "Proof Candidate",
+    eyebrow: "Featured Case Study",
     title: "Risk Management / RBAC Platform",
     summary:
-      "A Laravel API and Next.js frontend proof candidate for authentication, protected workflows, roles, permissions, and risk-management UI flows.",
+      "A Laravel API and Next.js frontend proof project for authentication, protected workflows, roles, permissions, risk registers, controls, action plans, and dashboard summaries.",
     links: [
       {
         label: "Frontend Repo",
@@ -654,9 +654,9 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       },
     ],
     role: [
-      "Created the backend and frontend repositories for the risk-management workflow.",
-      "Connected a Next.js frontend direction to a Laravel API backend.",
-      "Positioned the project around auth, protected routes, roles, permissions, and SaaS-style admin workflows.",
+      "Created and verified protected Laravel API workflows for risks, controls, action plans, and dashboard summaries.",
+      "Connected the Next.js frontend to the Laravel API with Sanctum authentication and role-aware navigation.",
+      "Packaged the project as public proof with READMEs, screenshots, seeded data, feature tests, and verified GitHub links.",
     ],
     stack: [
       "Laravel",
@@ -668,22 +668,28 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       "REST API",
       "Roles",
       "Permissions",
+      "Spatie Permission",
+      "PHPUnit",
     ],
     features: [
       "Authentication flow between Laravel API and Next.js frontend.",
       "Protected route workflow for authenticated product screens.",
-      "Roles and permissions direction for risk-management access control.",
+      "Seeded roles and permissions for admin and super-admin proof.",
+      "Risk register, control register, action-plan, and dashboard-summary workflows.",
       "Frontend/backend split that supports SaaS-style admin workflows.",
     ],
     decisions: [
       "Separated API backend and frontend client so each side can be documented and improved independently.",
-      "Used Laravel API authentication foundations as the backend integration surface.",
+      "Used Laravel Sanctum and Spatie Permission as the backend integration surface.",
       "Positioned roles and permissions as the core proof story rather than treating the project as a generic CRUD app.",
+      "Used service classes, API resources, migrations, seeders, and feature tests to keep the backend proof explainable.",
     ],
+    proofLabel: "Verified Proof",
     proofNeeded: [
-      "Confirm exact auth flow and whether Spatie Permission is used in this repo.",
-      "Replace default READMEs with real setup, API, auth, and RBAC documentation.",
-      "Fix repo typo/description issues and add screenshots of login, protected pages, and permission workflows.",
+      "Browser verified seeded admin and super-admin login flows.",
+      "Browser verified risk, control, action-plan, and dashboard summary pages against the Laravel API.",
+      "Backend feature tests cover protected risk, control, action-plan, and dashboard summary endpoints.",
+      "Repository was renamed to `risk-management-backend-api` and public links were updated.",
     ],
   },
   {
@@ -735,7 +741,7 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
     links: [
       {
         label: "Live Site",
-        href: "https://mapiyeyes-portfolio-jq9s.vercel.app",
+        href: "https://mapiyeyes-portfolio.vercel.app",
       },
       {
         label: "View GitHub Repo",

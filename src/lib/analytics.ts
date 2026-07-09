@@ -3,6 +3,7 @@ import { track as trackVercelEvent } from "@vercel/analytics";
 export type PortfolioEventName =
   | "contact_click"
   | "cv_download"
+  | "project_case_study_select"
   | "project_repo_click";
 
 export type PortfolioEventProperties = {

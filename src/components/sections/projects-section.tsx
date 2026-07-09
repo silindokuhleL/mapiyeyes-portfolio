@@ -12,10 +12,15 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Image from "next/image";
+import { useMemo, useState } from "react";
 import { SectionShell } from "@/components/layout/section-shell";
 import { buttonVariants } from "@/components/ui/button";
 import { Panel } from "@/components/ui/panel";
-import { featuredProjectCaseStudies, projectHighlights } from "@/data/portfolio";
+import {
+  featuredProjectCaseStudies,
+  projectHighlights,
+  type ProjectCaseStudy,
+} from "@/data/portfolio";
 import { trackPortfolioEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
@@ -30,6 +35,16 @@ const caseStudyIcons = [CreditCard, FileSearch, ShieldCheck, Bot, MonitorSmartph
 
 export function ProjectsSection() {
   const [primaryCaseStudy, ...secondaryCaseStudies] = featuredProjectCaseStudies;
+  const [selectedProjectTitle, setSelectedProjectTitle] = useState(
+    primaryCaseStudy?.title ?? featuredProjectCaseStudies[0]?.title ?? "",
+  );
+  const selectedCaseStudy = useMemo(
+    () =>
+      featuredProjectCaseStudies.find(
+        (caseStudy) => caseStudy.title === selectedProjectTitle,
+      ) ?? featuredProjectCaseStudies[0],
+    [selectedProjectTitle],
+  );
 
   return (
     <SectionShell
@@ -248,6 +263,161 @@ export function ProjectsSection() {
           })}
         </div>
       ) : null}
+
+      {selectedCaseStudy ? (
+        <Panel
+          eyebrow="Case Study Explorer"
+          title="Open a project and inspect the proof behind it."
+          description="Use this panel to compare role, stack, build decisions, proof status, and links without leaving the portfolio."
+        >
+          <div className="grid min-w-0 gap-6 xl:grid-cols-[0.85fr_1.15fr]">
+            <div className="grid min-w-0 gap-3">
+              {featuredProjectCaseStudies.map((caseStudy) => {
+                const isSelected = caseStudy.title === selectedCaseStudy.title;
+
+                return (
+                  <button
+                    key={caseStudy.title}
+                    type="button"
+                    aria-pressed={isSelected}
+                    onClick={() => {
+                      setSelectedProjectTitle(caseStudy.title);
+                      trackPortfolioEvent("project_case_study_select", {
+                        source: "projects_section",
+                        project: caseStudy.title,
+                      });
+                    }}
+                    className={cn(
+                      "min-w-0 rounded-2xl border p-4 text-left transition",
+                      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/70",
+                      isSelected
+                        ? "border-cyan-300/45 bg-cyan-300/10"
+                        : "border-white/10 bg-white/3 hover:border-cyan-300/25 hover:bg-white/5",
+                    )}
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300/75 sm:tracking-[0.28em]">
+                      {caseStudy.eyebrow}
+                    </span>
+                    <span className="mt-2 block text-base font-semibold leading-snug text-white">
+                      {caseStudy.title}
+                    </span>
+                    <span className="mt-2 line-clamp-2 block text-sm leading-6 text-slate-300">
+                      {caseStudy.summary}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <CaseStudyDetail caseStudy={selectedCaseStudy} />
+          </div>
+        </Panel>
+      ) : null}
     </SectionShell>
+  );
+}
+
+function CaseStudyDetail({ caseStudy }: { caseStudy: ProjectCaseStudy }) {
+  return (
+    <div className="min-w-0 rounded-2xl border border-white/10 bg-slate-950/40 p-4 sm:p-5">
+      <div className="grid min-w-0 gap-5">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300/75 sm:tracking-[0.28em]">
+            Selected Project
+          </p>
+          <h3 className="mt-3 text-2xl font-semibold leading-tight text-white">
+            {caseStudy.title}
+          </h3>
+          <p className="mt-3 text-sm leading-7 text-slate-300">{caseStudy.summary}</p>
+        </div>
+
+        <div className="flex flex-wrap gap-2">
+          {caseStudy.stack.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-white/10 bg-white/3 px-3 py-1.5 text-xs font-medium text-slate-300"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+
+        <div className="grid min-w-0 gap-4 lg:grid-cols-2">
+          <ProofBlock title="My Role" items={caseStudy.role} />
+          <ProofBlock title="Key Features" items={caseStudy.features} />
+          <ProofBlock title="Technical Decisions" items={caseStudy.decisions} />
+          <ProofBlock
+            title={caseStudy.proofLabel ?? "Proof Status"}
+            items={caseStudy.proofNeeded}
+            tone="proof"
+          />
+        </div>
+
+        <div className="grid gap-3 sm:flex sm:flex-wrap">
+          {caseStudy.links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() =>
+                trackPortfolioEvent("project_repo_click", {
+                  source: "case_study_explorer",
+                  project: caseStudy.title,
+                  label: link.label,
+                })
+              }
+              className={cn(buttonVariants({ variant: "secondary" }), "w-full sm:w-fit")}
+            >
+              {link.label}
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ProofBlock({
+  items,
+  title,
+  tone = "default",
+}: {
+  items: string[];
+  title: string;
+  tone?: "default" | "proof";
+}) {
+  return (
+    <div
+      className={cn(
+        "min-w-0 rounded-2xl border p-4",
+        tone === "proof"
+          ? "border-emerald-300/20 bg-emerald-300/8"
+          : "border-white/10 bg-white/3",
+      )}
+    >
+      <p
+        className={cn(
+          "text-xs font-semibold uppercase tracking-[0.18em] sm:tracking-[0.28em]",
+          tone === "proof" ? "text-emerald-200" : "text-cyan-300/75",
+        )}
+      >
+        {title}
+      </p>
+      <div className="mt-3 space-y-3">
+        {items.map((item) => (
+          <div key={item} className="grid grid-cols-[auto_1fr] gap-3">
+            <CheckCircle2
+              className={cn(
+                "mt-1 h-4 w-4",
+                tone === "proof" ? "text-emerald-300" : "text-cyan-300",
+              )}
+            />
+            <p className="text-sm leading-7 text-slate-300">{item}</p>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
