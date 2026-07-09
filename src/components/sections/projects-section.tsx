@@ -175,7 +175,7 @@ export function ProjectsSection() {
                 </div>
                 <div className="rounded-2xl border border-amber-300/20 bg-amber-300/8 p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-200 sm:tracking-[0.28em]">
-                    Proof Still Needed
+                    {primaryCaseStudy.proofLabel ?? "Proof Still Needed"}
                   </p>
                   <div className="mt-3 space-y-2 text-sm leading-7 text-slate-300">
                     {primaryCaseStudy.proofNeeded.map((item) => (

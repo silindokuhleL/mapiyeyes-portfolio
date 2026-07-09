@@ -211,9 +211,11 @@
 - Deferred: custom domain remains optional for later.
 
 ### P5: Deferred Project-Proof Work
-- Status: `deferred`
-- Project proof upgrades are intentionally moved to the end.
-- New from-scratch projects should be planned first, then brought back into the portfolio once they have real evidence.
+- Status: `in progress`
+- Beauty Salon proof upgrades have been brought back into the portfolio because sanitized public repos, Browser verification, screenshots, and case-study copy now exist.
+- Updated the primary Beauty Salon case study with verified-proof wording, public proof repository links, booking confirmation, provider approval, POS/product sales, RBAC/user management, marketplace, and mobile screenshots.
+- Remaining optional proof for this project: safe Paystack callback screenshot, staff-facing screenshot, or a short walkthrough video.
+- New from-scratch projects should still be planned and only added to the portfolio once they have real evidence.
 
 ## Per-Phase QA Log
 
