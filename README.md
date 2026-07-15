@@ -1,6 +1,8 @@
 # Silindokuhle Mapiyeye Portfolio
 
-Production portfolio for **Silindokuhle Mapiyeye**, a Full-Stack SaaS Engineer focused on Laravel, Next.js, REST APIs, RBAC, payments, AI workflows, queues, caching, and cloud deployment.
+Production portfolio for **Silindokuhle Mapiyeye**, a Full-Stack SaaS Engineer focused on Laravel, Next.js, REST APIs, RBAC, payments, AI workflows, queues, caching, and AWS-backed cloud deployment.
+
+Certification story: **AWS Certified Cloud Practitioner**, currently preparing for **AWS Certified Developer - Associate DVA-C02**.
 
 Live site:
 

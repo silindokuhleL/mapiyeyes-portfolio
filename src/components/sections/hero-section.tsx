@@ -31,6 +31,9 @@ export function HeroSection() {
             <p className="max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">
               {siteMetadata.tagline}
             </p>
+            <p className="max-w-3xl text-sm font-medium leading-7 text-emerald-200 sm:text-base">
+              {siteMetadata.certification}
+            </p>
           </div>
           <div data-hero-animate className="grid gap-3 sm:flex sm:flex-wrap">
             <a

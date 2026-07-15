@@ -83,7 +83,7 @@ export type ProjectCaseStudy = {
 export const heroHighlights = [
   "Laravel and Next.js SaaS systems",
   "APIs, auth, RBAC, payments, AI",
-  "Queues, caching, deployment workflows",
+  "AWS Certified Cloud Practitioner",
 ];
 
 export const heroStats: MetricCard[] = [
@@ -99,8 +99,8 @@ export const heroStats: MetricCard[] = [
   },
   {
     label: "Cloud and operations",
-    value: "AWS, Forge, Docker",
-    detail: "Deployment decisions are connected to release confidence, monitoring, and production support.",
+    value: "AWS CCP, DVA-C02 in progress",
+    detail: "Cloud decisions are backed by certification progress, release confidence, monitoring, and production support.",
   },
 ];
 
@@ -121,7 +121,7 @@ export const aboutCards: ContentCard[] = [
     eyebrow: "Execution",
     title: "Full-stack delivery backed by infrastructure awareness.",
     description:
-      "From Laravel backends and Next.js interfaces to AWS deployment paths, I connect product delivery with the environments that keep systems reliable.",
+      "From Laravel backends and Next.js interfaces to AWS deployment paths, I connect product delivery with the environments that keep systems reliable. I am AWS Certified Cloud Practitioner and preparing for AWS Certified Developer - Associate.",
     icon: "workflow",
     bullets: [
       "Application and API architecture",
@@ -389,7 +389,7 @@ export const devopsCapabilities: ContentCard[] = [
     eyebrow: "Cloud",
     title: "AWS services mapped to concrete application and delivery needs.",
     description:
-      "Cloud decisions are framed around system requirements using EC2, ECS, S3, VPC, and CloudFront as practical infrastructure building blocks.",
+      "Cloud decisions are framed around system requirements using EC2, ECS, S3, VPC, and CloudFront as practical infrastructure building blocks, strengthened by AWS Cloud Practitioner certification and Developer Associate preparation.",
     icon: "cloud",
     bullets: [
       "Infrastructure topology aligned to workloads",
@@ -449,8 +449,8 @@ export const devopsMetrics: MetricCard[] = [
   },
   {
     label: "Infrastructure alignment",
-    value: "Cloud services chosen for fit",
-    detail: "AWS services are framed as architecture decisions, not résumé badges.",
+    value: "AWS certified foundation",
+    detail: "AWS services are framed as architecture decisions, backed by Cloud Practitioner certification and DVA-C02 preparation.",
   },
 ];
 
@@ -811,7 +811,7 @@ export const architectureLayers: ContentCard[] = [
     eyebrow: "Delivery and Infrastructure",
     title: "Cloud and CI/CD systems that support safe, fast releases.",
     description:
-      "AWS topology, Docker workflows, and Jenkins automation are treated as core product infrastructure.",
+      "AWS topology, Docker workflows, and Jenkins automation are treated as core product infrastructure, supported by AWS Cloud Practitioner certification and Developer Associate study.",
     icon: "network",
     bullets: ["AWS services mapping", "Containerized workflows", "Release automation and control"],
   },
