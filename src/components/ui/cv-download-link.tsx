@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import type { MouseEvent } from "react";
-import { FileText } from "lucide-react";
+import { CheckCircle2, FileText, LoaderCircle } from "lucide-react";
 import type { VariantProps } from "class-variance-authority";
 import { buttonVariants } from "@/components/ui/button";
 import { trackPortfolioEvent } from "@/lib/analytics";
@@ -19,7 +19,7 @@ export function CvDownloadLink({ source, variant = "primary", className }: CvDow
   const resetTimer = useRef<number | null>(null);
 
   function handleClick(event: MouseEvent<HTMLAnchorElement>) {
-    if (status === "preparing") {
+    if (status !== "idle") {
       event.preventDefault();
       return;
     }
@@ -44,17 +44,31 @@ export function CvDownloadLink({ source, variant = "primary", className }: CvDow
       : status === "started"
         ? "CV download started"
         : "Download CV";
+  const icon =
+    status === "preparing" ? (
+      <LoaderCircle className="h-4 w-4 animate-spin" />
+    ) : status === "started" ? (
+      <CheckCircle2 className="h-4 w-4" />
+    ) : (
+      <FileText className="h-4 w-4" />
+    );
 
   return (
     <a
       href="/cv/Silindokuhle-Mapiyeye-CV.pdf"
       download
       aria-busy={status === "preparing"}
+      aria-disabled={status !== "idle"}
       onClick={handleClick}
-      className={cn(buttonVariants({ variant }), "select-none", className)}
+      className={cn(
+        buttonVariants({ variant }),
+        "select-none",
+        status !== "idle" && "pointer-events-none cursor-wait opacity-80",
+        className,
+      )}
     >
       {label}
-      <FileText className="h-4 w-4" />
+      {icon}
     </a>
   );
 }
