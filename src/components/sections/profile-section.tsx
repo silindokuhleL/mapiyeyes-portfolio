@@ -26,7 +26,7 @@ const profileProof = [
   {
     label: "Trust Signal",
     value: "Proof over decoration",
-    detail: "The profile is being built around project evidence, case studies, GitHub cleanup, and a stronger CV.",
+    detail: "Verified case studies, public repositories, a current CV, and direct contact paths make the work easy to inspect.",
     icon: ShieldCheck,
   },
 ];
@@ -36,8 +36,8 @@ export function ProfileSection() {
     <SectionShell
       id="profile"
       eyebrow="Profile"
-      title="A public developer profile built for trust, proof, and real conversations."
-      description="This section connects the human profile with the technical story: what kind of work fits, what proof is being gathered, and how someone can take the next step."
+      title="A clear view of the engineering value I bring to your project."
+      description="See where I fit, inspect the work behind the claims, and choose the fastest way to start a conversation."
       contentClassName="grid min-w-0 gap-6 lg:grid-cols-[0.8fr_1.2fr]"
     >
       <Panel className="h-full p-3 sm:p-4">
@@ -86,8 +86,8 @@ export function ProfileSection() {
 
         <Panel
           eyebrow="Profile Assets"
-          title="The CV is ready, and the portfolio will keep growing as more proof is added."
-          description="The profile now has a downloadable CV. The next credibility jump is adding more project proof: screenshots, repositories, live links, architecture notes, and outcomes."
+          title="Verified project proof and a current CV are ready to review."
+          description="Explore the case studies and public repositories, download the latest CV, or start a project conversation directly."
         >
           <div className="grid gap-3 sm:flex sm:flex-wrap">
             <CvDownloadLink source="profile_section" className="w-full sm:w-auto" />

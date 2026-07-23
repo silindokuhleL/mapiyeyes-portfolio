@@ -464,7 +464,7 @@ export const projectHighlights: ContentCard[] = [
     bullets: [
       "Booking payment flow, wallet payments, cash tracking, product sales, and refunds",
       "Spatie Permission, tenant-scoped users, and admin/provider operations",
-      "Strongest candidate for showing commercial product and SaaS architecture depth",
+      "Lead proof of commercial SaaS architecture across customer, staff, owner, and super-admin workflows",
     ],
     metric: "Primary project proof asset for SaaS, payments, RBAC, and multi-tenant operations",
   },
@@ -485,14 +485,14 @@ export const projectHighlights: ContentCard[] = [
     eyebrow: "Risk Management / RBAC",
     title: "Laravel API and Next.js workflow for auth, roles, permissions, and risk systems.",
     description:
-      "A backend/frontend platform candidate that demonstrates SaaS-style authentication, protected workflows, role/permission logic, and frontend API integration.",
+      "A verified Laravel API and Next.js platform with protected risk, control, action-plan, and dashboard workflows for role-aware users.",
     icon: "shield",
     bullets: [
-      "Laravel API backend with Next.js frontend integration",
-      "Auth, roles, permissions, and RBAC workflow direction",
-      "Good proof candidate after README and screenshot polish",
+      "Sanctum authentication with seeded admin and super-admin permission differences",
+      "Service-layer APIs, resources, migrations, seeders, and feature tests",
+      "Browser-verified risk, control, action-plan, and dashboard pages",
     ],
-    metric: "Best proof candidate for SaaS admin, RBAC, and permissions positioning",
+    metric: "Verified technical proof for Laravel APIs, RBAC, protected workflows, and Next.js integration",
   },
 ];
 
@@ -632,10 +632,11 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       "Cached search results to reduce repeated expensive search work.",
       "Used debounced frontend search to reduce unnecessary API calls.",
     ],
+    proofLabel: "Verified Proof",
     proofNeeded: [
-      "Upload, document list, search suggestions, and highlighted result screenshots.",
-      "Real search response-time or caching improvement numbers.",
-      "Live demo or short walkthrough video if deployment becomes available.",
+      "Repository README includes upload, document list, search suggestion, and highlighted-result screenshots.",
+      "Local verification log records upload, parsing, search, caching, and responsive frontend checks.",
+      "Public case-study and architecture notes explain the backend responsibilities and search decisions.",
     ],
   },
   {
@@ -751,7 +752,7 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
     role: [
       "Designed and built the portfolio as a public proof system rather than a static personal page.",
       "Structured content around skills, experience, DevOps capability, project proof, contact paths, and CV delivery.",
-      "Created a mobile-responsive presentation layer that can grow as more project evidence becomes available.",
+      "Created a mobile-responsive presentation layer for verified case studies, public repositories, and direct client contact.",
     ],
     stack: [
       "Next.js",
@@ -771,13 +772,14 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
     ],
     decisions: [
       "Used a structured content model so CV, LinkedIn, GitHub, and portfolio messaging can stay aligned.",
-      "Kept uncertain project details in visible proof-needed notes instead of overstating evidence.",
+      "Separated verified evidence from optional future polish so public claims remain accurate.",
       "Prioritized mobile responsiveness because recruiters and clients may view the profile from phones.",
     ],
+    proofLabel: "Verified Proof",
     proofNeeded: [
-      "Add the live portfolio URL to LinkedIn and the next generated CV version.",
-      "Connect the lightweight analytics events to a reporting dashboard if visitor reporting becomes important.",
-      "Keep the CV updated as new project metrics, screenshots, and live links are verified.",
+      "Live production URL includes case studies, public repositories, WhatsApp, email, and current CV access.",
+      "Vercel Analytics records production page and contact events.",
+      "Responsive layout, anchor navigation, and CV download behavior are verified in production.",
     ],
   },
 ];
