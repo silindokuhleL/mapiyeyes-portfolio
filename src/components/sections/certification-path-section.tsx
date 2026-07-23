@@ -70,7 +70,6 @@ export function CertificationPathSection() {
         {certificationPath.map((certification, index) => {
           const config = statusConfig[certification.status];
           const StatusIcon = config.Icon;
-          const isPlanned = certification.status === "planned";
 
           return (
             <article
@@ -102,9 +101,7 @@ export function CertificationPathSection() {
                   width={600}
                   height={600}
                   sizes="(min-width: 1280px) 176px, (min-width: 768px) 200px, 176px"
-                  className={`h-36 w-36 object-contain sm:h-44 sm:w-44 xl:h-40 xl:w-40 ${
-                    isPlanned ? "opacity-70 saturate-75" : ""
-                  }`}
+                  className="h-36 w-36 object-contain sm:h-44 sm:w-44 xl:h-40 xl:w-40"
                 />
               </a>
 
