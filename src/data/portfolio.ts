@@ -58,6 +58,18 @@ export type WorkflowStep = {
   detail: string;
 };
 
+export type CertificationStatus = "earned" | "in-progress" | "planned";
+
+export type CertificationPathItem = {
+  stage: string;
+  name: string;
+  examCode: string;
+  status: CertificationStatus;
+  badge: string;
+  href: string;
+  detail: string;
+};
+
 export type ProjectCaseStudy = {
   eyebrow: string;
   title: string;
@@ -451,6 +463,59 @@ export const devopsMetrics: MetricCard[] = [
     label: "Infrastructure alignment",
     value: "AWS certified foundation",
     detail: "AWS services are framed as architecture decisions, backed by Cloud Practitioner certification and DVA-C02 preparation.",
+  },
+];
+
+export const certificationPath: CertificationPathItem[] = [
+  {
+    stage: "Cloud foundation",
+    name: "AWS Certified Cloud Practitioner",
+    examCode: "CLF-C02",
+    status: "earned",
+    badge: "/certifications/aws-certified-cloud-practitioner.png",
+    href: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    detail:
+      "Validates foundational AWS cloud, security, architecture, billing, and support knowledge.",
+  },
+  {
+    stage: "Application development",
+    name: "AWS Certified Developer - Associate",
+    examCode: "DVA-C02",
+    status: "in-progress",
+    badge: "/certifications/aws-certified-developer-associate.png",
+    href: "https://aws.amazon.com/certification/certified-developer-associate/",
+    detail:
+      "Deepens practical skill in developing, deploying, securing, and troubleshooting AWS applications.",
+  },
+  {
+    stage: "Delivery and operations",
+    name: "AWS Certified DevOps Engineer - Professional",
+    examCode: "DOP-C02",
+    status: "planned",
+    badge: "/certifications/aws-certified-devops-engineer-professional.png",
+    href: "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+    detail:
+      "Builds advanced capability in CI/CD, observability, resilient systems, and automated operations.",
+  },
+  {
+    stage: "Production machine learning",
+    name: "AWS Certified Machine Learning Engineer - Associate",
+    examCode: "MLA-C01",
+    status: "planned",
+    badge: "/certifications/aws-certified-machine-learning-engineer-associate.png",
+    href: "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+    detail:
+      "Extends the path into implementing, deploying, and maintaining production machine learning solutions.",
+  },
+  {
+    stage: "Cloud security",
+    name: "AWS Certified Security - Specialty",
+    examCode: "SCS-C03",
+    status: "planned",
+    badge: "/certifications/aws-certified-security-specialty.png",
+    href: "https://aws.amazon.com/certification/certified-security-specialty/",
+    detail:
+      "Completes the roadmap with deeper protection of AWS workloads, data, identities, and applications.",
   },
 ];
 

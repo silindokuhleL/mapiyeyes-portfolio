@@ -2,6 +2,7 @@ import { ArchitectureSection } from "@/components/sections/architecture-section"
 import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { ContactSection } from "@/components/sections/contact-section";
+import { CertificationPathSection } from "@/components/sections/certification-path-section";
 import { DevOpsPreviewSection } from "@/components/sections/devops-preview-section";
 import { ExperiencePreviewSection } from "@/components/sections/experience-preview-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
@@ -23,6 +24,7 @@ export default function Home() {
         <SkillsSection />
         <ExperiencePreviewSection />
         <DevOpsPreviewSection />
+        <CertificationPathSection />
         <ProjectsSection />
         <ArchitectureSection />
         <ContactSection />
