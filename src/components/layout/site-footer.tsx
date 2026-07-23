@@ -3,6 +3,7 @@ import { siteMetadata } from "@/data/site";
 const footerLinks = [
   { href: "#experience", label: "Case Studies" },
   { href: "#devops", label: "DevOps" },
+  { href: "#certifications", label: "AWS Path" },
   { href: "#contact", label: "Contact" },
 ];
 
