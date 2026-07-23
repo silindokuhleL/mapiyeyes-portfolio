@@ -76,8 +76,8 @@ export function CertificationPathSection() {
               key={certification.examCode}
               className={`flex min-w-0 flex-col rounded-2xl border p-4 shadow-[0_24px_80px_rgba(0,0,0,0.22)] sm:p-5 ${config.cardClassName}`}
             >
-              <div className="flex items-start justify-between gap-3">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+              <div className="flex min-h-14 flex-col items-start gap-2">
+                <p className="whitespace-nowrap text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
                   Step {index + 1} of {certificationPath.length}
                 </p>
                 <span
