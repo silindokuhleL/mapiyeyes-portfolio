@@ -214,6 +214,7 @@
 - Status: `in progress`
 - Beauty Salon proof upgrades have been brought back into the portfolio because sanitized public repos, Browser verification, screenshots, and case-study copy now exist.
 - Updated the primary Beauty Salon case study with verified-proof wording, public proof repository links, booking confirmation, provider approval, POS/product sales, RBAC/user management, marketplace, and mobile screenshots.
+- Added DevPrep as a live product case study with its public deployment, repository, owned dashboard screenshot, responsive product-state story, 18 passing Vitest tests, and passing Vite production build.
 - Remaining optional proof for this project: safe Paystack callback screenshot, staff-facing screenshot, or a short walkthrough video.
 - New from-scratch projects should still be planned and only added to the portfolio once they have real evidence.
 

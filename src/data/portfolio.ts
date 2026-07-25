@@ -559,6 +559,19 @@ export const projectHighlights: ContentCard[] = [
     ],
     metric: "Verified technical proof for Laravel APIs, RBAC, protected workflows, and Next.js integration",
   },
+  {
+    eyebrow: "DevPrep AWS Study System",
+    title: "Live guided study product with daily practice, mock exams, and readiness tracking.",
+    description:
+      "A React and TypeScript study system that turns AWS Developer Associate DVA-C02 preparation into a structured 14-day workflow with persistent progress.",
+    icon: "cloud",
+    bullets: [
+      "Daily plans, visible session timing, tips, and questions",
+      "Domain learning, service comparisons, practice, review, and mock exams",
+      "Responsive product states, local progress persistence, and 18 passing Vitest tests",
+    ],
+    metric: "Live product proof for React, TypeScript, responsive state design, testing, and AWS learning workflows",
+  },
 ];
 
 export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
@@ -756,6 +769,64 @@ export const featuredProjectCaseStudies: ProjectCaseStudy[] = [
       "Browser verified risk, control, action-plan, and dashboard summary pages against the Laravel API.",
       "Backend feature tests cover protected risk, control, action-plan, and dashboard summary endpoints.",
       "Repository was renamed to `risk-management-backend-api` and public links were updated.",
+    ],
+  },
+  {
+    eyebrow: "Live Product Proof",
+    title: "DevPrep AWS Study System",
+    summary:
+      "A live guided AWS Developer Associate DVA-C02 study product with daily sessions, practice, review, mock exams, skill tracking, and readiness signals.",
+    links: [
+      {
+        label: "Open Live App",
+        href: "https://oud-practitioner-study.vercel.app",
+      },
+      {
+        label: "View GitHub Repo",
+        href: "https://github.com/silindokuhleL/cloudprep-aws-practitioner",
+      },
+    ],
+    screenshots: [
+      {
+        src: "/projects/devprep/dashboard.jpg",
+        alt: "DevPrep AWS study dashboard with daily plan, timer, tips, questions, and progress",
+        label: "Guided Study Dashboard",
+        detail:
+          "Daily DVA-C02 plan, session timing, progress, tips, questions, study history, and readiness in one responsive workspace.",
+      },
+    ],
+    role: [
+      "Designed and built the guided study product in React and TypeScript.",
+      "Structured AWS Developer Associate preparation into a 14-day sequence of daily learning, practice, review, and mock-exam actions.",
+      "Implemented persistent progress, responsive layouts, and visible loading, empty, error, disabled, and timing states.",
+    ],
+    stack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Vitest",
+      "Responsive UI",
+      "Local State Persistence",
+      "AWS DVA-C02 Study",
+    ],
+    features: [
+      "Daily study plans with a persistent session timer, tips, and questions.",
+      "Domain learning, AWS service comparisons, practice questions, spaced review, and mock exams.",
+      "Skill tracking, study history, progress persistence, and readiness signals.",
+      "Responsive mobile and desktop workflows without horizontal overflow.",
+    ],
+    decisions: [
+      "Turned the syllabus into daily actions so users always know what to study next.",
+      "Kept progress local for a simple, privacy-conscious public demo without an account requirement.",
+      "Made timing and readiness visible so study activity can be reviewed instead of guessed.",
+      "Labels the product as independent preparation rather than an official AWS product or an exam guarantee.",
+    ],
+    proofLabel: "Verified Proof",
+    proofNeeded: [
+      "The live deployment returns HTTP 200 and the dashboard workflows were Browser-verified.",
+      "All 18 Vitest tests pass.",
+      "The Vite production build passes.",
+      "The live app and public repository are linked directly from this case study.",
     ],
   },
   {
