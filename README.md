@@ -107,6 +107,27 @@ Proof included:
 - Browser-verified login for both roles.
 - Screenshots showing role-aware navigation.
 
+### DevPrep AWS Study System
+
+Live app:
+
+- https://oud-practitioner-study.vercel.app
+
+Repository:
+
+- https://github.com/silindokuhleL/cloudprep-aws-practitioner
+
+Proof included:
+
+- Guided 14-day AWS Developer Associate DVA-C02 study workflow.
+- Daily sessions, timer, tips, questions, practice, review, and mock exams.
+- Persistent progress, skill tracking, and readiness signals.
+- Responsive mobile and desktop layouts.
+- 18 passing Vitest tests and a passing Vite production build.
+
+This is an independent study product, not an official AWS product or an exam
+result guarantee.
+
 ### Prosuite Chatbot Hackathon
 
 Repository:
@@ -213,6 +234,7 @@ Completed:
 - Beauty Salon proof added.
 - Document Search proof added.
 - Risk Management/RBAC proof added.
+- DevPrep live product proof added.
 - Prosuite Chatbot proof added.
 
 Still improving:
