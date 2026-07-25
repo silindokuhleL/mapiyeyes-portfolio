@@ -136,16 +136,17 @@ Repository:
 
 Proof included:
 
-- Next.js GRC dashboard prototype.
-- Mazwi AI assistant UI.
-- OpenAI integration using `gpt-4o-mini` by default.
-- Streaming chat route.
-- Module-aware quick suggestions.
-- Browser-verified dashboard and chat screenshots.
+- Next.js 16 and React 19 GRC dashboard prototype.
+- Mazwi module-aware assistant UI with owned dashboard and chat screenshots.
+- Server-side OpenAI integration using `gpt-4o-mini` by default.
+- Streaming chat route and response-driven visualizations.
+- Typed action/context helpers and controlled missing-key behavior.
+- Passing lint, a passing 57-route production build, and zero production dependency audit findings.
+- Browser-verified desktop navigation, Mazwi workflow, mobile drawer, and 390px no-overflow layout.
 
 Current limitation:
 
-- This is positioned as an AI prototype/hackathon proof item because lint and production build still need cleanup in that repo.
+- This remains a prototype: durable persistence, tenant isolation, sensitive-data masking, long-term retrieval, and a paid live-AI response capture are not presented as production proof.
 
 ## Contact Paths
 
