@@ -54,7 +54,7 @@ export function ProjectsSection() {
       description="Each highlight is designed to communicate the type of product, platform, and delivery work that has shaped this portfolio."
       contentClassName="grid min-w-0 gap-8"
     >
-      <div className="grid min-w-0 gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid min-w-0 gap-6 md:grid-cols-2">
         {projectHighlights.map((project) => {
           const Icon = iconMap[project.icon as keyof typeof iconMap];
 
@@ -330,6 +330,31 @@ function CaseStudyDetail({ caseStudy }: { caseStudy: ProjectCaseStudy }) {
           </h3>
           <p className="mt-3 text-sm leading-7 text-slate-300">{caseStudy.summary}</p>
         </div>
+
+        {caseStudy.screenshots?.length ? (
+          <div className="grid min-w-0 gap-3 md:grid-cols-2">
+            {caseStudy.screenshots.map((screenshot) => (
+              <figure
+                key={screenshot.src}
+                className="min-w-0 overflow-hidden rounded-2xl border border-white/10 bg-slate-950/50"
+              >
+                <div className="relative aspect-video min-w-0 overflow-hidden bg-slate-950">
+                  <Image
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-cover object-top"
+                  />
+                </div>
+                <figcaption className="space-y-2 p-4">
+                  <p className="text-sm font-semibold text-white">{screenshot.label}</p>
+                  <p className="text-xs leading-6 text-slate-300">{screenshot.detail}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        ) : null}
 
         <div className="flex flex-wrap gap-2">
           {caseStudy.stack.map((item) => (
