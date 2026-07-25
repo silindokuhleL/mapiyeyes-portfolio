@@ -217,6 +217,7 @@
 - Added DevPrep as a live product case study with its public deployment, repository, owned dashboard screenshot, responsive product-state story, 18 passing Vitest tests, and passing Vite production build.
 - Upgraded Prosuite from an evidence-safe placeholder to a verified AI prototype case study with exact OpenAI and `gpt-4o-mini` details, owned dashboard/chat screenshots, server-side streaming, clean lint, a passing 57-route build, zero production audit findings, and Browser-verified mobile containment.
 - Prosuite remains honestly bounded as prototype proof: durable persistence, tenant isolation, sensitive-data masking, long-term retrieval, and a live paid-model response capture are still pending.
+- Refreshed the public two-page CV so its selected projects now include the verified Prosuite AI prototype and live DevPrep study system alongside the Beauty Salon and Risk Management proof.
 - Remaining optional proof for this project: safe Paystack callback screenshot, staff-facing screenshot, or a short walkthrough video.
 - New from-scratch projects should still be planned and only added to the portfolio once they have real evidence.
 
