@@ -215,6 +215,8 @@
 - Beauty Salon proof upgrades have been brought back into the portfolio because sanitized public repos, Browser verification, screenshots, and case-study copy now exist.
 - Updated the primary Beauty Salon case study with verified-proof wording, public proof repository links, booking confirmation, provider approval, POS/product sales, RBAC/user management, marketplace, and mobile screenshots.
 - Added DevPrep as a live product case study with its public deployment, repository, owned dashboard screenshot, responsive product-state story, 18 passing Vitest tests, and passing Vite production build.
+- Upgraded Prosuite from an evidence-safe placeholder to a verified AI prototype case study with exact OpenAI and `gpt-4o-mini` details, owned dashboard/chat screenshots, server-side streaming, clean lint, a passing 57-route build, zero production audit findings, and Browser-verified mobile containment.
+- Prosuite remains honestly bounded as prototype proof: durable persistence, tenant isolation, sensitive-data masking, long-term retrieval, and a live paid-model response capture are still pending.
 - Remaining optional proof for this project: safe Paystack callback screenshot, staff-facing screenshot, or a short walkthrough video.
 - New from-scratch projects should still be planned and only added to the portfolio once they have real evidence.
 
